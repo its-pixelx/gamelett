@@ -1,0 +1,271 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #121212; /* Black */
+    color: white; /* White Text */
+}
+
+header {
+    background: linear-gradient(to right, #6a0dad, #1e3c72); /* Purple to Dark Blue */
+    text-align: center;
+    padding: 1.5em 0;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: white;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+}
+
+main {
+    padding: 2em;
+}
+
+/* Search Bar */
+.search-bar {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+#search {
+    width: 80%;
+    padding: 0.7em;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+    background: #1e1e1e;
+    color: white;
+    outline: none;
+}
+
+/* Game List */
+.game-item {
+    background: #1e1e1e; /* Dark Background */
+    width: 300px; /* Fixed Width */
+    padding: 1.5em;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin: 0 auto; /* Center the card */
+}
+
+.game-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    justify-content: center; /* Center items in the container */
+    margin: 0 auto;
+}
+
+.game-item h2 {
+    color: #6a0dad; /* Purple */
+}
+
+.game-item img {
+    width: 100px;   /* Fixed Width */
+    height: 100px;  /* Fixed Height */
+    object-fit: cover; /* Maintain aspect ratio, crop if needed */
+    border-radius: 10px;
+}
+
+.btn {
+    background: linear-gradient(to right, #6a0dad, #1e3c72); /* Gradient */
+    color: white;
+    padding: 0.5em 1.5em;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.btn:hover {
+    background: #6a0dad;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em;
+    background: #1e1e1e;
+    color: white;
+}
+
+/* Main Game Details Container */
+.game-details-container {
+    max-width: 900px;
+    margin: 2em auto;
+    padding: 1em;
+    background: #1e1e1e; /* Slightly lighter than the main background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Game Header Section */
+.game-header {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 2em;
+}
+
+.game-info h1 {
+    font-size: 1.8em;
+    color: #6a0dad; /* Purple Title */
+}
+
+.game-info p {
+    margin: 0.2em 0;
+    color: #d3d3d3; /* Subtle Text */
+}
+
+/* Game Details Section */
+.game-details {
+    margin-bottom: 2em;
+}
+
+.game-details h2 {
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-bottom: 0.5em;
+}
+
+.game-details p {
+    line-height: 1.6em;
+    color: #b3b3b3;
+}
+
+/* Download Information Section */
+.download-info {
+    margin-bottom: 2em;
+    background: #2b2b2b;
+    padding: 1em;
+    border-radius: 6px;
+}
+
+.download-info h2 {
+    margin-bottom: 0.8em;
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+.download-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.download-info li {
+    font-size: 1.1em;
+    margin: 0.5em 0;
+    color: #b3b3b3;
+}
+
+.download-btn {
+    display: inline-block;
+    background: linear-gradient(to right, #6a0dad, #1e3c72); /* Purple to Blue Gradient */
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.7em 1.5em;
+    border-radius: 6px;
+    font-size: 1.1em;
+    margin-top: 1em;
+    text-align: center;
+}
+
+.download-btn:hover {
+    background: #6a0dad; /* Slightly darker */
+    cursor: pointer;
+}
+
+/* Screenshots Section */
+.screenshots h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.8em;
+    color: #ffffff;
+    text-align: center;
+}
+
+.screenshot-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    gap: 1em; /* Space between images */
+    align-items: center;
+    padding: 1em 0;
+}
+
+.screenshot-gallery img {
+    width: 300px; /* Default width for screenshots */
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .screenshot-gallery img {
+        width: 250px; /* Slightly smaller width for tablets and mobile */
+    }
+
+    .screenshots h2 {
+        font-size: 1.3em; /* Slightly smaller title font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .screenshot-gallery {
+        flex-direction: column; /* Stack images vertically on small screens */
+        gap: 0.8em; /* Adjust spacing between stacked images */
+    }
+
+    .screenshot-gallery img {
+        width: 100%; /* Make the images responsive to screen width */
+        max-width: 300px; /* Prevent images from being too large */
+        margin: 0 auto; /* Center images */
+    }
+
+    .screenshots h2 {
+        font-size: 1.2em; /* Smaller font size for the section title */
+    }
+}
+
+.game-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background: #282828;
+    object-fit: cover;
+}
+/* Search Bar Styling */
+.search-bar {
+    margin: 20px auto;
+    max-width: 400px;
+    position: relative;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #2a2a2a;
+    color: #ffffff;
+    outline: none;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.search-bar input:focus {
+    box-shadow: 0 0 8px #007bff;
+    background-color: #1f1f1f;
+}
