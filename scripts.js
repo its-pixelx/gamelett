@@ -27,9 +27,16 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("game-size").textContent = game.size;
         document.getElementById("update-date").textContent = game.updateDate;
 
+        // Set the game icon
+        const gameIcon = document.querySelector(".game-icon");
+        if (gameIcon) {
+            gameIcon.src = game.gameIcon;
+            gameIcon.alt = `${game.title} Icon`; // Improve accessibility
+        }
+
         // Populate screenshots
         const screenshotGallery = document.querySelector(".screenshot-gallery");
-        game.screenshots.slice(0, 2).forEach((src, index) => { // Limit to the first two screenshots
+        game.screenshots.slice(0, 2).forEach((src, index) => {
             const img = document.createElement("img");
             img.src = src;
             img.alt = `Screenshot ${index + 1}`;
@@ -39,12 +46,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+// Search functionality (Unchanged)
 document.addEventListener("DOMContentLoaded", () => {
     const searchInput = document.getElementById("search-input");
     const gameList = document.getElementById("game-list");
     const games = document.querySelectorAll(".game-item");
 
-    // Filter games as the user types
     searchInput.addEventListener("input", () => {
         const query = searchInput.value.toLowerCase().trim();
 
