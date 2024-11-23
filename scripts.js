@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
             version: "653.463 UPI",
             size: "105GB",
             updateDate: "Aug 11, 2024",
-            gameIcon: "assets/forza-horizon-5-icon.png",
-            screenshots: ["img/g1s1.jpg", "img/g1s2.jpg"]
+            gameIcon: "g1.jpg",
+            screenshots: ["g1s1.jpg", "g1s2.jpg"]
         }
     };
 
@@ -26,7 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("game-version").textContent = game.version;
         document.getElementById("game-size").textContent = game.size;
         document.getElementById("update-date").textContent = game.updateDate;
-        document.querySelector(".game-icon").src = 'img/g1.jpg';
 
         // Populate screenshots
         const screenshotGallery = document.querySelector(".screenshot-gallery");
