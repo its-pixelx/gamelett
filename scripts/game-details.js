@@ -1,51 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pixelate_me - Game Details</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="logo.png">
-</head>
-<body>
-    <header>
-        <h1>Pixelate_me</h1>
-    </header>
-    <main class="game-details-container">
-        <section class="game-header">
-            <img alt="Game Icon" class="game-icon">
-            <div class="game-info">
-                <h1 id="game-title">Game Title</h1>
-                <p id="game-category">Category: Arcade</p>
-                <p id="game-developer">Developer: Pixel Studios</p>
-            </div>
-        </section>
-        <section class="game-details">
-            <h2>About the Game</h2>
-            <p id="game-description">
-                Detailed game information will load here.
-            </p>
-        </section>
-        <section class="download-info">
-            <h2>Download Details</h2>
-            <ul>
-                <li>Version: <span id="game-version">1.0.0</span></li>
-                <li>File Size: <span id="game-size">50MB</span></li>
-                <li>Updated On: <span id="update-date">Nov 20, 2024</span></li>
-            </ul>
-            <a id="download-link" href="ad-page1.html" class="btn download-btn">Download</a>
-        </section>
-        <section class="screenshots">
-            <h2>Screenshots</h2>
-            <div class="screenshot-gallery">
-                <!-- Screenshots will be dynamically added here -->
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>© 2024 Pixelate_me. All rights reserved.</p>
-    </footer>
-    <script src="scripts/game-details.js"></script>
-</body>
-</html>
-    
+document.addEventListener("DOMContentLoaded", () => {
+    const games = {
+        "forzahorizon-5": {
+            title: "Forza Horizon 5 -- VIP",
+            category: "Racing, Open World",
+            developer: "Microsoft",
+            description: "Forza Horizon 5 is an open-world racing game...",
+            version: "653.463 UPI",
+            size: "105GB",
+            updateDate: "Aug 11, 2024",
+            gameIcon: "img/forzahorizon5/logo.jpg",
+            screenshots: ["img/forzahorizon5/shot1.jpg", "img/forzahorizon5/shot2.jpg"],
+            downloadUrl: "https://www.mediafire.com/file/8s6cnpf3uyi7ij3/7l_forzah5_setup.exe/file"
+        }
+    };
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const gameKey = urlParams.get("game");
+    const game = games[gameKey];
+
+    if (game) {
+        document.querySelector(".game-icon").src = game.gameIcon;
+        document.getElementById("game-title").textContent = game.title;
+        document.getElementById("game-category").textContent = `Category: ${game.category}`;
+        document.getElementById("game-developer").textContent = `Developer: ${game.developer}`;
+        document.getElementById("game-description").textContent = game.description;
+        document.getElementById("game-version").textContent = game.version;
+        document.getElementById("game-size").textContent = game.size;
+        document.getElementById("update-date").textContent = game.updateDate;
+
+        const adPageUrl = `ad-page1.html?downloadUrl=${encodeURIComponent(game.downloadUrl)}`;
+        document.getElementById("download-link").href = adPageUrl;
+    }
+});
