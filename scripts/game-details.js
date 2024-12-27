@@ -10,7 +10,19 @@ document.addEventListener("DOMContentLoaded", () => {
             updateDate: "Aug 11, 2024",
             gameIcon: "img/forzahorizon5/logo.jpg",
             screenshots: ["img/forzahorizon5/shot1.jpg", "img/forzahorizon5/shot2.jpg"],
-            downloadUrl: "https://www.mediafire.com/file/8s6cnpf3uyi7ij3/7l_forzah5_setup.exe/file"
+            downloadUrl: "https://www.mediafire.com/file/5plvpywpsac59nm/7l_gta-v_latest_setup.exe/file"
+        },
+        "gta5": {
+            title: "GTA5",
+            category: "Open World, Action",
+            developer: "Rockstar Games",
+            description: "An epic adventure of crime, chaos, and conspiracy set in the sprawling, sun-soaked metropolis of Los Santos.",
+            version: "1.0.3274",
+            size: "Required 160GB, Installation 60gb",
+            updateDate: "July 17, 2024",
+            gameIcon: "img/gta5/logo.png",
+            screenshots: ["img/gta5/shot1.jpg", "img/gta5/shot2.jpg"],
+            downloadUrl: "https://www.mediafire.com/file/5plvpywpsac59nm/7l_gta-v_latest_setup.exe/file"
         }
     };
 
