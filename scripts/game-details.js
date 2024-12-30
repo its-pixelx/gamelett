@@ -23,6 +23,18 @@ document.addEventListener("DOMContentLoaded", () => {
             gameIcon: "img/gta5/logo.png",
             screenshots: ["img/gta5/shot1.jpg", "img/gta5/shot2.jpg"],
             downloadUrl: "https://www.mediafire.com/file/5plvpywpsac59nm/7l_gta-v_latest_setup.exe/file"
+        },
+        "palworld": {
+            title: "Palworld",
+            category: "Open World, Adventure",
+            developer: "Pocketpair",
+            description: "Palworld is an open-world survival and crafting game developed by Pocketpair. In this game, you fight, farm, build, and work alongside mysterious creatures called 'Pals'. It combines elements of monster-catching, training, base building, and exploration.",
+            version: "0.4.12.64723",
+            size: "R40gb (SSD Recommended)",
+            updateDate: "December 26, 2024",
+            gameIcon: "img/palworld/logo.jpg",
+            screenshots: ["img/palworld/shot1.jpg", "img/palworld/shot2.jpg"],
+            downloadUrl: "https://www.mediafire.com/file/uzzo2b1b3i9r968/7l_palworld_installer.exe/file"
         }
     };
 
