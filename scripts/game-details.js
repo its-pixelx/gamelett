@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
             category: "Open World, Action",
             developer: "CD Projekt Red",
             description: "Cyberpunk 2077 is an open-world, action-adventure RPG set in a dystopian future where technology and body modifications intertwine with society's underbelly.",
-            version: "1.0.3274",
+            version: "2.0",
             size: "Required 160GB, Installation 60gb",
             updateDate: "July 17, 2024",
             gameIcon: "img/gta5/logo.png",
