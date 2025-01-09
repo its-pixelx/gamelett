@@ -35,6 +35,18 @@ document.addEventListener("DOMContentLoaded", () => {
             gameIcon: "img/palworld/logo.jpg",
             screenshots: ["img/palworld/shot1.jpg", "img/palworld/shot2.jpg"],
             downloadUrl: "https://www.mediafire.com/file/uzzo2b1b3i9r968/7l_palworld_installer.exe/file"
+        },
+        "cyberpunk2077": {
+            title: "Cyberpunk 2077",
+            category: "Open World, Action",
+            developer: "CD Projekt Red",
+            description: "Cyberpunk 2077 is an open-world, action-adventure RPG set in a dystopian future where technology and body modifications intertwine with society's underbelly.",
+            version: "1.0.3274",
+            size: "Required 160GB, Installation 60gb",
+            updateDate: "July 17, 2024",
+            gameIcon: "img/gta5/logo.png",
+            screenshots: ["img/gta5/shot1.jpg", "img/gta5/shot2.jpg"],
+            downloadUrl: "https://www.mediafire.com/file/5plvpywpsac59nm/7l_gta-v_latest_setup.exe/file"
         }
     };
 
