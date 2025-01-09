@@ -44,8 +44,8 @@ document.addEventListener("DOMContentLoaded", () => {
             version: "2.0",
             size: "Required 160GB, Installation 60gb",
             updateDate: "December, 2024",
-            gameIcon: "img/cyberpunk2077/logo.png",
-            screenshots: ["img/cyberpunk2077/shot1.jpg", "img/cyberpunk2077/shot2.jpg"],
+            gameIcon: "img/cyberpunk2077/logo.jpeg",
+            screenshots: ["img/cyberpunk2077/shot1.jpeg", "img/cyberpunk2077/shot2.jpeg"],
             downloadUrl: "https://www.mediafire.com/file/5plvpywpsac59nm/7l_gta-v_latest_setup.exe/file"
         }
     };
