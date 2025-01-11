@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
             updateDate: "December, 2024",
             gameIcon: "img/cyberpunk2077/logo.jpeg",
             screenshots: ["img/cyberpunk2077/shot1.jpeg", "img/cyberpunk2077/shot2.jpeg"],
-            downloadUrl: "https://www.mediafire.com/file/5plvpywpsac59nm/7l_gta-v_latest_setup.exe/file"
+            downloadUrl: "https://www.mediafire.com/file/uxh80phylf7hicl/7l_cyberpunk2077_latest_setup.exe/file"
         }
     };
 
