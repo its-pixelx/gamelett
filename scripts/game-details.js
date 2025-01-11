@@ -47,6 +47,18 @@ document.addEventListener("DOMContentLoaded", () => {
             gameIcon: "img/cyberpunk2077/logo.jpeg",
             screenshots: ["img/cyberpunk2077/shot1.jpeg", "img/cyberpunk2077/shot2.jpeg"],
             downloadUrl: "https://www.mediafire.com/file/uxh80phylf7hicl/7l_cyberpunk2077_latest_setup.exe/file"
+        },
+        "rdr2": {
+            title: "Red Dead Redemption 2",
+            category: "Open World, Action, shooting",
+            developer: "Rockstar Games",
+            description: "Cyberpunk 2077 is an open-world, action-adventure RPG set in a dystopian future where technology and body modifications intertwine with society's underbelly.",
+            version: "2.0",
+            size: "Required 160GB, Installation 60gb",
+            updateDate: "December, 2024",
+            gameIcon: "img/cyberpunk2077/logo.jpeg",
+            screenshots: ["img/cyberpunk2077/shot1.jpeg", "img/cyberpunk2077/shot2.jpeg"],
+            downloadUrl: "https://www.mediafire.com/file/uxh80phylf7hicl/7l_cyberpunk2077_latest_setup.exe/file"
         }
     };
 
