@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
             updateDate: "November 4, 2024",
             gameIcon: "img/rdr2/logo.jpeg",
             screenshots: ["img/rdr2/shot1.jpeg", "img/rdr2/shot2.jpeg"],
-            downloadUrl: "https://www.mediafire.com/file/uxh80phylf7hicl/7l_cyberpunk2077_latest_setup.exe/file"
+            downloadUrl: "https://www.mediafire.com/file/kjkepbl4arcf2hb/7l_rdr2_setup.exe/file"
         }
     };
 
