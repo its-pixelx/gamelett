@@ -59,6 +59,18 @@ document.addEventListener("DOMContentLoaded", () => {
             gameIcon: "img/rdr2/logo.jpg",
             screenshots: ["img/rdr2/shot1.jpeg", "img/rdr2/shot2.jpeg"],
             downloadUrl: "https://www.mediafire.com/file/kjkepbl4arcf2hb/7l_rdr2_setup.exe/file"
+        },
+        "rdr": {
+            title: "Red Dead Redemption",
+            category: "Open World, Action, shooting",
+            developer: "Rockstar Games",
+            description: "Red Dead Redemption 2 follows Arthur Morgan, a complex outlaw with a strong sense of loyalty, as he navigates the decline of the Wild West and the Van der Linde gang's struggle for survival.",
+            version: "1.0.40.57107",
+            size: "119gb",
+            updateDate: "November 4, 2024",
+            gameIcon: "img/rdr/logo.jpeg",
+            screenshots: ["img/rdr/shot1.jpeg", "img/rdr/shot2.jpeg"],
+            downloadUrl: "https://www.mediafire.com/file/kjkepbl4arcf2hb/7l_rdr2_setup.exe/file"
         }
     };
 
