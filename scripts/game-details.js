@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
             updateDate: "October 29, 2024",
             gameIcon: "img/rdr/logo.jpeg",
             screenshots: ["img/rdr/shot1.jpeg", "img/rdr/shot2.jpeg"],
-            downloadUrl: "https://www.mediafire.com/file/kjkepbl4arcf2hb/7l_rdr2_setup.exe/file"
+            downloadUrl: "https://www.mediafire.com/file/i7a1zmaqfayq11d/7l_rdr_setup.exe/file"
         }
     };
 
