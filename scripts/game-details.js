@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
             version: "1.0.40.57107",
             size: "119gb",
             updateDate: "November 4, 2024",
-            gameIcon: "img/rdr2/logo.jpeg",
+            gameIcon: "img/rdr2/logo.jpg",
             screenshots: ["img/rdr2/shot1.jpeg", "img/rdr2/shot2.jpeg"],
             downloadUrl: "https://www.mediafire.com/file/kjkepbl4arcf2hb/7l_rdr2_setup.exe/file"
         }
