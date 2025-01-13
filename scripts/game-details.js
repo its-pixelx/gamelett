@@ -32,8 +32,8 @@ document.addEventListener("DOMContentLoaded", () => {
             version: "1.2.0.43",
             size: "32gb",
             updateDate: "March 26, 2020",
-            gameIcon: "img/gta4/logo.png",
-            screenshots: ["img/gta4/shot1.jpg", "img/gta4/shot2.jpg"],
+            gameIcon: "img/gta4/logo.jpg",
+            screenshots: ["img/gta4/shot1.jpeg", "img/gta4/shot2.jpeg"],
             downloadUrl: "https://www.mediafire.com/file/5plvpywpsac59nm/7l_gta-v_latest_setup.exe/file"
         },
         "palworld": {
