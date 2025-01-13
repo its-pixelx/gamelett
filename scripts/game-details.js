@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
             updateDate: "September 4, 2024",
             gameIcon: "img/arma3/logo.jpg",
             screenshots: ["img/arma3/shot1.jpeg", "img/arma/shot2.jpeg"],
-            downloadUrl: "https://www.mediafire.com/file/i7a1zmaqfayq11d/7l_rdr_setup.exe/file"
+            downloadUrl: "https://www.mediafire.com/file/lldcsexzq30afor/7l_arma3_setup.exe/file"
         }
     };
 
