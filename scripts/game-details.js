@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
             downloadUrl: "https://www.mediafire.com/file/i7a1zmaqfayq11d/7l_rdr_setup.exe/file"
         },
         "arma3": {
-            title: "Arma 3",
+            title: "Arma 3 -- Ultimate Edition",
             category: "Tactical shooter with role-playing elements",
             developer: "Bohemia Interactive Studio",
             description: "Arma 3 Ultimate Edition** is the definitive bundle of the tactical shooter game, offering the base game along with all expansions and DLCs, providing an unparalleled military simulation experience",
