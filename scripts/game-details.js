@@ -24,6 +24,18 @@ document.addEventListener("DOMContentLoaded", () => {
             screenshots: ["img/gta5/shot1.jpg", "img/gta5/shot2.jpg"],
             downloadUrl: "https://www.mediafire.com/file/5plvpywpsac59nm/7l_gta-v_latest_setup.exe/file"
         },
+        "gta4": {
+            title: "GTA4",
+            category: "Open World, Action",
+            developer: "Rockstar Games",
+            description: "An epic adventure of crime, chaos, and conspiracy set in the sprawling, sun-soaked metropolis of Los Santos.",
+            version: "1.2.0.43",
+            size: "32gb",
+            updateDate: "July 17, 2024",
+            gameIcon: "img/gta5/logo.png",
+            screenshots: ["img/gta5/shot1.jpg", "img/gta5/shot2.jpg"],
+            downloadUrl: "https://www.mediafire.com/file/5plvpywpsac59nm/7l_gta-v_latest_setup.exe/file"
+        },
         "palworld": {
             title: "Palworld",
             category: "Open World, Adventure",
