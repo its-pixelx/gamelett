@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
             version: "1.2.0.43",
             size: "32gb",
             updateDate: "March 26, 2020",
-            gameIcon: "img/gta4/logo.jpg",
+            gameIcon: "img/gta4/logo.png",
             screenshots: ["img/gta4/shot1.jpeg", "img/gta4/shot2.jpeg"],
             downloadUrl: "https://www.mediafire.com/file/cyrlo0p7dj9qy37/7l_gtaiv_setup.exe/file"
         },
