@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
             version: "1.1.3",
             size: "160gb",
             updateDate: "December 23, 2024",
-            gameIcon: "img/stalker2/logo.jpg",
+            gameIcon: "img/stalker2/logo.jpeg",
             screenshots: ["img/stalker2/shot1.jpeg", "img/stalker2/shot2.jpeg"],
             downloadUrl: "https://www.mediafire.com/file/lldcsexzq30afor/7l_arma3_setup.exe/file"
         }
