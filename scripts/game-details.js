@@ -28,12 +28,12 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "GTA4",
             category: "Open World, Action",
             developer: "Rockstar Games",
-            description: "An epic adventure of crime, chaos, and conspiracy set in the sprawling, sun-soaked metropolis of Los Santos.",
+            description: "Niko Bellic, an ex-soldier from Eastern Europe, arrives in Liberty City seeking the American Dream but quickly finds himself entangled in the city's criminal underworld.",
             version: "1.2.0.43",
             size: "32gb",
             updateDate: "July 17, 2024",
-            gameIcon: "img/gta5/logo.png",
-            screenshots: ["img/gta5/shot1.jpg", "img/gta5/shot2.jpg"],
+            gameIcon: "img/gta4/logo.png",
+            screenshots: ["img/gta4/shot1.jpg", "img/gta4/shot2.jpg"],
             downloadUrl: "https://www.mediafire.com/file/5plvpywpsac59nm/7l_gta-v_latest_setup.exe/file"
         },
         "palworld": {
