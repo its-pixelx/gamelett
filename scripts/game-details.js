@@ -83,6 +83,18 @@ document.addEventListener("DOMContentLoaded", () => {
             gameIcon: "img/rdr/logo.jpeg",
             screenshots: ["img/rdr/shot1.jpeg", "img/rdr/shot2.jpeg"],
             downloadUrl: "https://www.mediafire.com/file/i7a1zmaqfayq11d/7l_rdr_setup.exe/file"
+        },
+        "arma3": {
+            title: "Arma 3",
+            category: "Tactical shooter with role-playing elements",
+            developer: "Bohemia Interactive Studio",
+            description: "Red Dead Redemption is a gripping tale of former outlaw John Marston, who is forced by the government to hunt down his former gang members in a richly detailed open-world Wild West setting.",
+            version: "2.16.151.618",
+            size: "160gb",
+            updateDate: "September 4, 2024",
+            gameIcon: "img/arma/logo.jpeg",
+            screenshots: ["img/arma3/shot1.jpeg", "img/arma/shot2.jpeg"],
+            downloadUrl: "https://www.mediafire.com/file/i7a1zmaqfayq11d/7l_rdr_setup.exe/file"
         }
     };
 
