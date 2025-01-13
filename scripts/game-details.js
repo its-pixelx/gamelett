@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Arma 3",
             category: "Tactical shooter with role-playing elements",
             developer: "Bohemia Interactive Studio",
-            description: "Red Dead Redemption is a gripping tale of former outlaw John Marston, who is forced by the government to hunt down his former gang members in a richly detailed open-world Wild West setting.",
+            description: "Arma 3 Ultimate Edition** is the definitive bundle of the tactical shooter game, offering the base game along with all expansions and DLCs, providing an unparalleled military simulation experience",
             version: "2.16.151.618",
             size: "160gb",
             updateDate: "September 4, 2024",
