@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
             updateDate: "March 26, 2020",
             gameIcon: "img/gta4/logo.jpg",
             screenshots: ["img/gta4/shot1.jpeg", "img/gta4/shot2.jpeg"],
-            downloadUrl: "https://www.mediafire.com/file/5plvpywpsac59nm/7l_gta-v_latest_setup.exe/file"
+            downloadUrl: "https://www.mediafire.com/file/cyrlo0p7dj9qy37/7l_gtaiv_setup.exe/file"
         },
         "palworld": {
             title: "Palworld",
