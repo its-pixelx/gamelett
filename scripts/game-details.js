@@ -95,6 +95,18 @@ document.addEventListener("DOMContentLoaded", () => {
             gameIcon: "img/arma3/logo.jpg",
             screenshots: ["img/arma3/shot1.jpeg", "img/arma/shot2.jpeg"],
             downloadUrl: "https://www.mediafire.com/file/lldcsexzq30afor/7l_arma3_setup.exe/file"
+        },
+        "stalker2": {
+            title: "STALKER 2: Heart of Chornobyl –- Ultimate Edition",
+            category: "Action, First-Person Shooter, Survival, RPG",
+            developer: "GSC Game World",
+            description: "S.T.A.L.K.E.R. 2: Heart of Chornobyl Ultimate Edition** plunges players into a highly immersive post-apocalyptic world, offering a meticulously crafted storyline, breathtaking visuals, dynamic weather systems, and an expansive open-world experience that challenges their survival skills to the limit.",
+            version: "1.1.3",
+            size: "160gb",
+            updateDate: "December 23, 2024",
+            gameIcon: "img/stalker2/logo.jpg",
+            screenshots: ["img/stalker2/shot1.jpeg", "img/stalker2/shot2.jpeg"],
+            downloadUrl: "https://www.mediafire.com/file/lldcsexzq30afor/7l_arma3_setup.exe/file"
         }
     };
 
