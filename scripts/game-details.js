@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
             version: "2.16.151.618",
             size: "160gb",
             updateDate: "September 4, 2024",
-            gameIcon: "img/arma/logo.jpg",
+            gameIcon: "img/arma3/logo.jpg",
             screenshots: ["img/arma3/shot1.jpeg", "img/arma/shot2.jpeg"],
             downloadUrl: "https://www.mediafire.com/file/i7a1zmaqfayq11d/7l_rdr_setup.exe/file"
         }
