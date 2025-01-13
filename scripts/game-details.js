@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
             downloadUrl: "https://www.mediafire.com/file/5plvpywpsac59nm/7l_gta-v_latest_setup.exe/file"
         },
         "gta4": {
-            title: "GTA4",
+            title: "GTA4 - Complete Edition",
             category: "Open World, Action",
             developer: "Rockstar Games",
             description: "Niko Bellic, an ex-soldier from Eastern Europe, arrives in Liberty City seeking the American Dream but quickly finds himself entangled in the city's criminal underworld.",
