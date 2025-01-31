@@ -107,24 +107,55 @@ document.addEventListener("DOMContentLoaded", () => {
             gameIcon: "img/stalker2/logo.jpeg",
             screenshots: ["img/stalker2/shot1.jpeg", "img/stalker2/shot2.jpeg"],
             downloadUrl: "https://www.mediafire.com/file/lldcsexzq30afor/7l_arma3_setup.exe/file"
+        },
+        "minecraftunlocker": {
+            title: "Minecraft For Windows Trail Full Unlocker",
+            category: "Arcade, Open World",
+            developer: "itspixelx",
+            description: "With this unlocker, you're not just a player; you're a pioneer. Every click, every command leads you further into the unknown, unveiling landscapes and treasures that were once beyond reach. This folder is more than a collection of data; it's a gateway to adventures waiting to unfold.",
+            version: "Possible With Any Version",
+            size: "500mb(Aprox)",
+            updateDate: "January 31st, 2050",
+            gameIcon: "img/minecraftunlocker/logo.png",
+            screenshots: ["No Screenshots available, sry....",],
+            downloadUrl: "https://www.mediafire.com/folder/obtzhzbe61hip/Minecraft+Full+Unlock"
         }
     };
 
+    // Get game key from URL
     const urlParams = new URLSearchParams(window.location.search);
     const gameKey = urlParams.get("game");
     const game = games[gameKey];
 
-    if (game) {
-        document.querySelector(".game-icon").src = game.gameIcon;
-        document.getElementById("game-title").textContent = game.title;
-        document.getElementById("game-category").textContent = `Category: ${game.category}`;
-        document.getElementById("game-developer").textContent = `Developer: ${game.developer}`;
-        document.getElementById("game-description").textContent = game.description;
-        document.getElementById("game-version").textContent = game.version;
-        document.getElementById("game-size").textContent = game.size;
-        document.getElementById("update-date").textContent = game.updateDate;
-
-        const adPageUrl = `ad-page1.html?downloadUrl=${encodeURIComponent(game.downloadUrl)}`;
-        document.getElementById("download-link").href = adPageUrl;
+    if (!game) {
+        console.error("Game not found!");
+        document.querySelector(".game-details-container").innerHTML = "<h2>Game not found!</h2>";
+        return;
     }
+
+    // Update game details
+    document.querySelector(".game-icon").src = game.gameIcon;
+    document.getElementById("game-title").textContent = game.title;
+    document.getElementById("game-category").textContent = `Category: ${game.category}`;
+    document.getElementById("game-developer").textContent = `Developer: ${game.developer}`;
+    document.getElementById("game-description").textContent = game.description;
+    document.getElementById("game-version").textContent = game.version;
+    document.getElementById("game-size").textContent = game.size;
+    document.getElementById("update-date").textContent = game.updateDate;
+
+    // Set download link with ad-page redirection
+    const adPageUrl = `ad-page1.html?downloadUrl=${encodeURIComponent(game.downloadUrl)}`;
+    document.getElementById("download-link").href = adPageUrl;
+
+    // Populate screenshots dynamically
+    const screenshotGallery = document.querySelector(".screenshot-gallery");
+    screenshotGallery.innerHTML = ""; // Clear previous content
+
+    game.screenshots.forEach(screenshot => {
+        const imgElement = document.createElement("img");
+        imgElement.src = screenshot;
+        imgElement.alt = `${game.title} Screenshot`;
+        imgElement.classList.add("screenshot-img");
+        screenshotGallery.appendChild(imgElement);
+    });
 });
