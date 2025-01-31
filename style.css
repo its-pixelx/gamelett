@@ -205,17 +205,18 @@ footer {
 }
 
 .screenshot-gallery {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
     gap: 1em; /* Space between images */
+    justify-content: center;
     align-items: center;
     padding: 1em 0;
 }
 
 .screenshot-gallery img {
-    width: 300px; /* Default width for screenshots */
-    height: auto;
+    width: 100%; /* Ensure images fill their container */
+    max-width: 300px; /* Maintain a reasonable max width */
+    height: 180px; /* Fixed height for uniformity */
     border-radius: 8px;
     object-fit: cover;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
@@ -223,31 +224,35 @@ footer {
 
 /* Mobile adjustments */
 @media (max-width: 768px) {
+    .screenshot-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust columns */
+    }
+
     .screenshot-gallery img {
-        width: 250px; /* Slightly smaller width for tablets and mobile */
+        max-width: 250px; /* Adjust size for tablets */
+        height: 150px;
     }
 
     .screenshots h2 {
-        font-size: 1.3em; /* Slightly smaller title font size */
+        font-size: 1.3em;
     }
 }
 
 @media (max-width: 480px) {
     .screenshot-gallery {
-        flex-direction: column; /* Stack images vertically on small screens */
-        gap: 0.8em; /* Adjust spacing between stacked images */
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Stack images in a smaller grid */
     }
 
     .screenshot-gallery img {
-        width: 100%; /* Make the images responsive to screen width */
-        max-width: 300px; /* Prevent images from being too large */
-        margin: 0 auto; /* Center images */
+        max-width: 220px;
+        height: 130px;
     }
 
     .screenshots h2 {
-        font-size: 1.2em; /* Smaller font size for the section title */
+        font-size: 1.2em;
     }
 }
+
 
 .game-icon {
     width: 100px;
