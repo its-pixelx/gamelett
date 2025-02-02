@@ -28,31 +28,101 @@ main {
     padding: 2em;
 }
 
-/* Search Bar *//* Center the search bar */
+/* Base Search Bar */
 .search-bar {
-    text-align: center;
-    margin-bottom: 2em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0.5em;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+    border: 2px solid #6a0dad;
+    transition: all 0.3s ease;
+    max-width: 50px; /* Compact width */
+    margin: 0 auto;
+    overflow: hidden;
+    cursor: text;
+    position: relative;
 }
 
-/* Input field styling */
-#search-input {
-    width: 80%; /* Responsive width */
-    padding: 0.7em;
-    border-radius: 5px;
+/* Search Icon (Visible in Compact Mode Only) */
+.search-icon {
+    color: #aaa;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+    padding: 0 0.5em;
+    display: inline; /* Visible by default in compact mode */
+}
+
+/* Hide Icon When Expanded */
+.search-bar.expanded .search-icon {
+    display: none; /* Completely remove it in expanded mode */
+}
+
+/* Search Input & Filter */
+#search-input,
+#category-filter {
+    padding: 0.6em 0.8em;
     border: none;
-    font-size: 1em;
-    background: #1e1e1e;
+    border-radius: 15px;
+    background-color: #333;
     color: white;
     outline: none;
-    box-sizing: border-box;
+    transition: all 0.3s ease;
+    display: none; /* Hidden in compact view */
+    flex: 1;
+    min-width: 0;
 }
 
-/* Add mobile responsiveness */
-@media (max-width: 768px) {
-    #search-input {
-        width: 90%; /* Wider for smaller screens */
-        font-size: 0.9em;
-    }
+/* Placeholder Styling */
+#search-input::placeholder {
+    color: #aaa;
+}
+
+/* Expanded View */
+.search-bar.expanded {
+    max-width: 600px;
+    padding: 0.7em 0.8em;
+}
+
+/* Show Input & Filter When Expanded */
+.search-bar.expanded #search-input,
+.search-bar.expanded #category-filter {
+    display: block;
+}
+
+/* Results Text Styling */
+.results-text {
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    background-color: #333;
+    color: white;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    max-width: 300px;
+    margin: 20px auto;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0; /* Initially hidden */
+}
+
+/* When games are found, show the results text */
+.results-text.visible {
+    opacity: 1;
+}
+
+
+
+
+/* Game List */
+
+.game-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    justify-content: center; /* Center items in the container */
+    margin: 0 auto;
 }
 
 /* Game List */
@@ -64,16 +134,43 @@ main {
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     margin: 0 auto; /* Center the card */
+    position: relative; /* To position the new label */
 }
 
-.game-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5em;
-    justify-content: center; /* Center items in the container */
-    margin: 0 auto;
+/* New label styling */
+.new-label {
+    position: absolute;
+    top: 10px; 
+    left: 10px;
+    background-color: #4caf50; /* Soft green (standard for "new") */
+    color: white;
+    padding: 0.3em 0.8em; /* Reduced padding for a sleeker look */
+    border-radius: 20px; /* Slightly rounded corners */
+    font-size: 1rem; /* Modern, smaller font size */
+    font-weight: 600; /* Slightly boldened for emphasis */
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    z-index: 10; /* Make sure it stays on top */
+    animation: pulse 1.5s ease-in-out infinite; /* Slight pulse for a subtle effect */
 }
 
+/* Animation for the "New" label */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.85;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Other styles for the game card */
 .game-item h2 {
     color: #6a0dad; /* Purple */
 }
@@ -84,6 +181,9 @@ main {
     object-fit: cover; /* Maintain aspect ratio, crop if needed */
     border-radius: 10px;
 }
+
+
+
 
 .btn {
     background: linear-gradient(to right, #6a0dad, #1e3c72); /* Gradient */
