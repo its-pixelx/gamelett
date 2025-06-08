@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamelett by its_pixelx</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/web/logo.png">
+</head>
+<body>
+    <header>
+        <h1>Gamelett</h1>
+        <p>Discover & download your favorite games for free -- its_pixelx</p>
+        <!-- Search Bar -->
+        <!-- Search Bar -->
+        <div class="search-bar" id="search-bar">
+            <span class="search-icon" id="search-icon">🔍</span> <!-- Search Icon -->
+            <input type="text" id="search-input" placeholder="Search games...">
+            <select id="category-filter">
+                <option value="">All Categories</option>
+                <option value="action">Action</option>
+                <option value="racing">Racing</option>
+                <option value="arcade">Arcade</option>
+                <option value="adventure">Adventure</option>
+                <option value="openworld">Open World</option>
+                <option value="rpg">RPG</option>
+            </select>
+        </div>
+        
+        
+    </header>
+    <main>
+        <!-- Add this somewhere in your HTML where you want to display the results count -->
+        <div id="results-text" class="results-text">0 games found</div>
+
+
+        <section class="game-list" id="game-list">
+            <!-- Game items dynamically filtered -->
+             <div class="game-item" data-name="Drive Beyond Horizon" data-category="openworld">
+                <div class="new-label">New!</div> <!-- New label -->
+                <img src="img/drivebeyondhorizon/logo.jpg" alt="Drive Beyond Horizon">
+                <h2>Drive Beyond Horizon</h2>
+                <p>Open World</p>
+                <a href="game-details.html?game=drivebeyondhorizon" class="btn">Get It</a>
+            </div>
+
+            <div class="game-item" data-name="Minecraft For Windows Trail Unlocker" data-category="arcade openworld">
+                <img src="img/minecraftunlocker/logo.png" alt="Minecraft Unlocker">
+                <h2>Minecraft For Windows Trail Full Unlocker</h2>
+                <p>Arcade, Open World</p>
+                <a href="game-details.html?game=minecraftunlocker" class="btn">Get It</a>
+            </div>
+
+            <div class="game-item" data-name="STALKER 2: Heart of Chornobyl –- Ultimate Edition" data-category="rpg">
+                <div class="auto-label">Autoupdate</div> <!-- Auto label -->
+                <img src="img/stalker2/logo.jpeg" alt="STALKER 2: Heart of Chornobyl –- Ultimate Edition">
+                <h2>STALKER 2: Heart of Chornobyl –- Ultimate Edition</h2>
+                <p>Action, First-Person Shooter, Survival, RPG</p>
+                <a href="game-details.html?game=stalker2" class="btn">Get It</a>
+            </div>
+
+            <div class="game-item" data-name="arma 3" data-category="rpg">
+                <div class="auto-label">Autoupdate</div> <!-- Auto label -->
+                <img src="img/arma3/logo.jpg" alt="Arma 3">
+                <h2>Arma 3 -- Ultimate Edition</h2>
+                <p>Tactical shooter with role-playing elements</p>
+                <a href="game-details.html?game=arma3" class="btn">Get It</a>
+            </div>
+
+            <div class="game-item" data-name="forza horizon 5" data-category="racing openworld">
+                <div class="auto-label">Autoupdate</div> <!-- Auto label -->
+                <img src="img/forzahorizon5/logo.jpg" alt="Forza Horizon 5">
+                <h2>Forza Horizon 5 -- VIP</h2>
+                <p>Racing, Open World</p>
+                <a href="game-details.html?game=forzahorizon-5" class="btn">Get It</a>
+            </div>
+
+            <div class="game-item" data-name="GTA 5" data-category="action openworld">
+                <div class="auto-label">Autoupdate</div> <!-- Auto label -->
+                <img src="img/gta5/logo.png" alt="GTA 5">
+                <h2>GTA5</h2>
+                <p>Open World, Action</p>
+                <a href="game-details.html?game=gta5" class="btn">Get It</a>
+            </div>
+
+            <div class="game-item" data-name="GTA4 -- Complete Edition" data-category="action openworld">
+                <div class="auto-label">Autoupdate</div> <!-- Auto label -->
+                <img src="img/gta4/logo.png" alt="GTA 4">
+                <h2>GTA4 -- Complete Edition</h2>
+                <p>Open World, Action</p>
+                <a href="game-details.html?game=gta4" class="btn">Get It</a>
+            </div>
+
+            <div class="game-item" data-name="Palworld" data-category="adventure openworld">
+                <div class="auto-label">Autoupdate</div> <!-- Auto label -->
+                <img src="img/palworld/logo.jpg" alt="Palworld">
+                <h2>Palworld</h2>
+                <p>Open World, Adventure</p>
+                <a href="game-details.html?game=palworld" class="btn">Get It</a>
+            </div>
+
+            <div class="game-item" data-name="cyberpunk 2077" data-category="action openworld">
+                <div class="auto-label">Autoupdate</div> <!-- Auto label -->
+                <img src="img/cyberpunk2077/logo.jpeg" alt="Cyberpunk 2077">
+                <h2>Cyberpunk 2077</h2>
+                <p>Open World, Futuristic,  Action</p>
+                <a href="game-details.html?game=cyberpunk2077" class="btn">Get It</a>
+            </div>
+
+            <div class="game-item" data-name="Red Dead Redemption" data-category="action adventure openworld">
+                <div class="auto-label">Autoupdate</div> <!-- Auto label -->
+                <img src="img/rdr/logo.jpeg" alt="rdr">
+                <h2>Red Dead Redemption</h2>
+                <p>Open World, Action, Shooting</p>
+                <a href="game-details.html?game=rdr" class="btn">Get It</a>
+            </div>
+
+            <div class="game-item" data-name="Red Dead Redemption 2" data-category="action adventure openworld">
+                <div class="auto-label">Autoupdate</div> <!-- Auto label -->
+                <img src="img/rdr2/logo.jpg" alt="Red Dead Redemption 2">
+                <h2>Red Dead Redemption 2</h2>
+                <p>Open World, Action, Shooting</p>
+                <a href="game-details.html?game=rdr2" class="btn">Get It</a>
+            </div>
+            
+            
+            
+            <!-- Add more games dynamically or as static content -->
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Gamelett. All rights reserved.</p>
+    </footer>
+    <script src="scripts/game-details.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
