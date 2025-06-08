@@ -119,6 +119,18 @@ document.addEventListener("DOMContentLoaded", () => {
             gameIcon: "img/minecraftunlocker/logo.png",
             screenshots: ["No Screenshots available, sry....",],
             downloadUrl: "https://www.mediafire.com/folder/obtzhzbe61hip/Minecraft+Full+Unlock"
+        },
+        "drivebeyondhorizon": {
+            title: "Drive Beyond Horizon",
+            category: "Open World",
+            developer: "Tacty Studio, Santor Games",
+            description: "Rev up your engines and venture into the unknown with Drive Beyond Horizons! Conquer dynamic landscapes, customize your ride, and unearth hidden treasures. Get ready for heart-pounding challenges and endless excitement. Your adventure starts now !",
+            version: "Probably BETA",
+            size: "8.1gb(Aprox)",
+            updateDate: "June 8th, 2025 (Direct Autoupdate File Feature Added)",
+            gameIcon: "img/drivebeyondhorizon/logo.jpg",
+            screenshots: ["img/drivebeyondhorizon/shot1.jpg", "img/drivebeyondhorizon/shot2.jpg", "img/drivebeyondhorizon/shot3.jpg"],
+            downloadUrl: "https://download2341.mediafire.com/kfimluvc7q0gpd5c74VA2J0PBrVvaROPZGdqNLCt1VfXjnnqs2sWiXqh9G5OzmvTUUfHHOsByqg2uNuIdegsSG3NSm77Uo1uCBVqUSplmLkMIp8Z-5D_DiX_bi92_ILOzaNHI8sWtPAFi0OoNxIEzjeLtfFKuND0c3j7qdwoGPy2tVs/l39eikq0segvtv6/Drive-Beyond-Horizons-v2025-05-26.zip"
         }
     };
 
