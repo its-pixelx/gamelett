@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
             updateDate: "July 17, 2024",
             gameIcon: "img/gta5/logo.png",
             screenshots: ["img/gta5/shot1.jpg", "img/gta5/shot2.jpg"],
-            downloadUrl: "https://www.mediafire.com/file/5plvpywpsac59nm/7l_gta-v_latest_setup.exe/file"
+            downloadUrl: "https://se7en.ws/files/7l_gtav_setup.exe"
         },
         "gta4": {
             title: "GTA4 - Complete Edition",
