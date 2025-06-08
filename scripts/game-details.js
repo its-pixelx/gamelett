@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
             updateDate: "Aug 11, 2024",
             gameIcon: "img/forzahorizon5/logo.jpg",
             screenshots: ["img/forzahorizon5/shot1.jpg", "img/forzahorizon5/shot2.jpg"],
-            downloadUrl: "https://www.mediafire.com/file/5plvpywpsac59nm/7l_gta-v_latest_setup.exe/file"
+            downloadUrl: "https://se7en.ws/?lang=en?download=&kcccount=https://se7en.ws/files/7l_forzah5_setup.exe"
         },
         "gta5": {
             title: "GTA5",
