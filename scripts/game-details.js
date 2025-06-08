@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
             updateDate: "June 8th, 2025 (Direct Autoupdate File Feature Added)",
             gameIcon: "img/gta4/logo.png",
             screenshots: ["img/gta4/shot1.jpeg", "img/gta4/shot2.jpeg"],
-            downloadUrl: "https://www.mediafire.com/file/cyrlo0p7dj9qy37/7l_gtaiv_setup.exe/file"
+            downloadUrl: "https://se7en.ws/files/7l_gtaiv_setup.exe"
         },
         "palworld": {
             title: "Palworld",
