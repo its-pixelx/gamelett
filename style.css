@@ -154,6 +154,57 @@ main {
     animation: pulse 1.5s ease-in-out infinite; /* Slight pulse for a subtle effect */
 }
 
+/* New label styling */
+.fix-label {
+    position: absolute;
+    top: 10px; 
+    left: 10px;
+    background-color: #fffb00; /* Soft green (standard for "new") */
+    color: white;
+    padding: 0.3em 0.8em; /* Reduced padding for a sleeker look */
+    border-radius: 20px; /* Slightly rounded corners */
+    font-size: 0.7rem; /* Modern, smaller font size */
+    font-weight: 600; /* Slightly boldened for emphasis */
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    z-index: 10; /* Make sure it stays on top */
+    animation: pulse 1.5s ease-in-out infinite; /* Slight pulse for a subtle effect */
+}
+
+/* New label styling */
+.error-label {
+    position: absolute;
+    top: 10px; 
+    left: 10px;
+    background-color: #ff0000; /* Soft green (standard for "new") */
+    color: white;
+    padding: 0.3em 0.8em; /* Reduced padding for a sleeker look */
+    border-radius: 20px; /* Slightly rounded corners */
+    font-size: 1rem; /* Modern, smaller font size */
+    font-weight: 600; /* Slightly boldened for emphasis */
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    z-index: 10; /* Make sure it stays on top */
+    animation: pulse 1.5s ease-in-out infinite; /* Slight pulse for a subtle effect */
+}
+
+/* New label styling */
+.auto-label {
+    position: absolute;
+    top: 10px; 
+    left: 10px;
+    background-color: #ffffff; /* Soft green (standard for "new") */
+    color: rgb(0, 0, 0);
+    padding: 0.3em 0.8em; /* Reduced padding for a sleeker look */
+    border-radius: 20px; /* Slightly rounded corners */
+    font-size: 0.7rem; /* Modern, smaller font size */
+    font-weight: 600; /* Slightly boldened for emphasis */
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    z-index: 10; /* Make sure it stays on top */
+    animation: pulse 1.5s ease-in-out infinite; /* Slight pulse for a subtle effect */
+}
+
 /* Animation for the "New" label */
 @keyframes pulse {
     0% {
