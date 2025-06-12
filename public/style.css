@@ -1,0 +1,437 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #121212; /* Black */
+    color: white; /* White Text */
+}
+
+header {
+    background: linear-gradient(to right, #6a0dad, #1e3c72); /* Purple to Dark Blue */
+    text-align: center;
+    padding: 1.5em 0;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: white;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+}
+
+main {
+    padding: 2em;
+}
+
+/* Base Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0.5em;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+    border: 2px solid #6a0dad;
+    transition: all 0.3s ease;
+    max-width: 50px; /* Compact width */
+    margin: 0 auto;
+    overflow: hidden;
+    cursor: text;
+    position: relative;
+}
+
+/* Search Icon (Visible in Compact Mode Only) */
+.search-icon {
+    color: #aaa;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+    padding: 0 0.5em;
+    display: inline; /* Visible by default in compact mode */
+}
+
+/* Hide Icon When Expanded */
+.search-bar.expanded .search-icon {
+    display: none; /* Completely remove it in expanded mode */
+}
+
+/* Search Input & Filter */
+#search-input,
+#category-filter {
+    padding: 0.6em 0.8em;
+    border: none;
+    border-radius: 15px;
+    background-color: #333;
+    color: white;
+    outline: none;
+    transition: all 0.3s ease;
+    display: none; /* Hidden in compact view */
+    flex: 1;
+    min-width: 0;
+}
+
+/* Placeholder Styling */
+#search-input::placeholder {
+    color: #aaa;
+}
+
+/* Expanded View */
+.search-bar.expanded {
+    max-width: 600px;
+    padding: 0.7em 0.8em;
+}
+
+/* Show Input & Filter When Expanded */
+.search-bar.expanded #search-input,
+.search-bar.expanded #category-filter {
+    display: block;
+}
+
+/* Results Text Styling */
+.results-text {
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    background-color: #333;
+    color: white;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    max-width: 300px;
+    margin: 20px auto;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0; /* Initially hidden */
+}
+
+/* When games are found, show the results text */
+.results-text.visible {
+    opacity: 1;
+}
+
+
+
+
+/* Game List */
+
+.game-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    justify-content: center; /* Center items in the container */
+    margin: 0 auto;
+}
+
+/* Game List */
+.game-item {
+    background: #1e1e1e; /* Dark Background */
+    width: 300px; /* Fixed Width */
+    padding: 1.5em;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin: 0 auto; /* Center the card */
+    position: relative; /* To position the new label */
+}
+
+/* New label styling */
+.new-label {
+    position: absolute;
+    top: 10px; 
+    left: 10px;
+    background-color: #4caf50; /* Soft green (standard for "new") */
+    color: white;
+    padding: 0.3em 0.8em; /* Reduced padding for a sleeker look */
+    border-radius: 20px; /* Slightly rounded corners */
+    font-size: 1rem; /* Modern, smaller font size */
+    font-weight: 600; /* Slightly boldened for emphasis */
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    z-index: 10; /* Make sure it stays on top */
+    animation: pulse 1.5s ease-in-out infinite; /* Slight pulse for a subtle effect */
+}
+
+/* New label styling */
+.fix-label {
+    position: absolute;
+    top: 10px; 
+    left: 10px;
+    background-color: #fffb00; /* Soft green (standard for "new") */
+    color: white;
+    padding: 0.3em 0.8em; /* Reduced padding for a sleeker look */
+    border-radius: 20px; /* Slightly rounded corners */
+    font-size: 0.7rem; /* Modern, smaller font size */
+    font-weight: 600; /* Slightly boldened for emphasis */
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    z-index: 10; /* Make sure it stays on top */
+    animation: pulse 1.5s ease-in-out infinite; /* Slight pulse for a subtle effect */
+}
+
+/* New label styling */
+.error-label {
+    position: absolute;
+    top: 10px; 
+    left: 10px;
+    background-color: #ff0000; /* Soft green (standard for "new") */
+    color: white;
+    padding: 0.3em 0.8em; /* Reduced padding for a sleeker look */
+    border-radius: 20px; /* Slightly rounded corners */
+    font-size: 1rem; /* Modern, smaller font size */
+    font-weight: 600; /* Slightly boldened for emphasis */
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    z-index: 10; /* Make sure it stays on top */
+    animation: pulse 1.5s ease-in-out infinite; /* Slight pulse for a subtle effect */
+}
+
+/* New label styling */
+.auto-label {
+    position: absolute;
+    top: 10px; 
+    left: 10px;
+    background-color: #ffffff; /* Soft green (standard for "new") */
+    color: rgb(0, 0, 0);
+    padding: 0.3em 0.8em; /* Reduced padding for a sleeker look */
+    border-radius: 20px; /* Slightly rounded corners */
+    font-size: 0.7rem; /* Modern, smaller font size */
+    font-weight: 600; /* Slightly boldened for emphasis */
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    z-index: 10; /* Make sure it stays on top */
+    animation: pulse 1.5s ease-in-out infinite; /* Slight pulse for a subtle effect */
+}
+
+/* Animation for the "New" label */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.85;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Other styles for the game card */
+.game-item h2 {
+    color: #6a0dad; /* Purple */
+}
+
+.game-item img {
+    width: 100px;   /* Fixed Width */
+    height: 100px;  /* Fixed Height */
+    object-fit: cover; /* Maintain aspect ratio, crop if needed */
+    border-radius: 10px;
+}
+
+
+
+
+.btn {
+    background: linear-gradient(to right, #6a0dad, #1e3c72); /* Gradient */
+    color: white;
+    padding: 0.5em 1.5em;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.btn:hover {
+    background: #6a0dad;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em;
+    background: #1e1e1e;
+    color: white;
+}
+
+/* Main Game Details Container */
+.game-details-container {
+    max-width: 900px;
+    margin: 2em auto;
+    padding: 1em;
+    background: #1e1e1e; /* Slightly lighter than the main background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Game Header Section */
+.game-header {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 2em;
+}
+
+.game-info h1 {
+    font-size: 1.8em;
+    color: #6a0dad; /* Purple Title */
+}
+
+.game-info p {
+    margin: 0.2em 0;
+    color: #d3d3d3; /* Subtle Text */
+}
+
+/* Game Details Section */
+.game-details {
+    margin-bottom: 2em;
+}
+
+.game-details h2 {
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-bottom: 0.5em;
+}
+
+.game-details p {
+    line-height: 1.6em;
+    color: #b3b3b3;
+}
+
+/* Download Information Section */
+.download-info {
+    margin-bottom: 2em;
+    background: #2b2b2b;
+    padding: 1em;
+    border-radius: 6px;
+}
+
+.download-info h2 {
+    margin-bottom: 0.8em;
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+.download-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.download-info li {
+    font-size: 1.1em;
+    margin: 0.5em 0;
+    color: #b3b3b3;
+}
+
+.download-btn {
+    display: inline-block;
+    background: linear-gradient(to right, #6a0dad, #1e3c72); /* Purple to Blue Gradient */
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.7em 1.5em;
+    border-radius: 6px;
+    font-size: 1.1em;
+    margin-top: 1em;
+    text-align: center;
+}
+
+.download-btn:hover {
+    background: #6a0dad; /* Slightly darker */
+    cursor: pointer;
+}
+
+/* Screenshots Section */
+.screenshots h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.8em;
+    color: #ffffff;
+    text-align: center;
+}
+
+.screenshot-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 1em; /* Space between images */
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+}
+
+.screenshot-gallery img {
+    width: 100%; /* Ensure images fill their container */
+    max-width: 300px; /* Maintain a reasonable max width */
+    height: 180px; /* Fixed height for uniformity */
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .screenshot-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust columns */
+    }
+
+    .screenshot-gallery img {
+        max-width: 250px; /* Adjust size for tablets */
+        height: 150px;
+    }
+
+    .screenshots h2 {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 480px) {
+    .screenshot-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Stack images in a smaller grid */
+    }
+
+    .screenshot-gallery img {
+        max-width: 220px;
+        height: 130px;
+    }
+
+    .screenshots h2 {
+        font-size: 1.2em;
+    }
+}
+
+
+.game-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background: #282828;
+    object-fit: cover;
+}
+/* Search Bar Styling */
+.search-bar {
+    margin: 20px auto;
+    max-width: 400px;
+    position: relative;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #2a2a2a;
+    color: #ffffff;
+    outline: none;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.search-bar input:focus {
+    box-shadow: 0 0 8px #007bff;
+    background-color: #1f1f1f;
+}
