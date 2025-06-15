@@ -155,6 +155,18 @@ document.addEventListener("DOMContentLoaded", () => {
             gameIcon: "img/gtavicecity/logo.jpg",
             screenshots: ["img/gtavicecity/shot1.jpg", "img/gtavicecity/shot2.jpg", "img/gtavicecity/shot3.jpg"],
             downloadUrl: "https://94-130-129-111.top/Oceanofgames.com/Gta_Vice_City.zip?md5=6jE6IE1kPQ_2vVns7hwNrQ&expires=1752582921"
+        },
+        "subnautica": {
+            title: "Subnautica",
+            category: "Openworld, Adventure",
+            developer: "Unknown Worlds Entertainment",
+            description: "Subnautica is an open-world survival adventure game developed by Unknown Worlds Entertainment, released in 2018 for PC. Set on an alien ocean planet, players take on the role of a lone survivor who must explore the deep sea, gather resources, craft equipment, and uncover the secrets of the mysterious world to escape. Known for its immersive underwater environments, compelling story, and atmospheric tension, Subnautica has become a critically acclaimed title in the survival genre.",
+            version: "v1.0",
+            size: "8.7gb(Aprox)",
+            updateDate: "January 23, 2018",
+            gameIcon: "img/subnautica/logo.jpg",
+            screenshots: ["img/subnautica/shot1.jpg", "img/subnautica/shot2.jpg", "img/subnautica/shot3.jpg"],
+            downloadUrl: "https://148-251-84-239.top/Oceanofgames.com/Subnautica.zip?md5=Dc3z2Hsp7yJnqft_a19xzA&expires=1752278853"
         }
     };
 
