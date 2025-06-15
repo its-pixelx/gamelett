@@ -157,13 +157,11 @@ main {
 /* New label styling */
 .fix-label {
     position: absolute;
-    top: 10px; 
-    left: 10px;
     background-color: #fffb00; /* Soft green (standard for "new") */
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 0.3em 0.8em; /* Reduced padding for a sleeker look */
     border-radius: 20px; /* Slightly rounded corners */
-    font-size: 0.7rem; /* Modern, smaller font size */
+    font-size: 1rem; /* Modern, smaller font size */
     font-weight: 600; /* Slightly boldened for emphasis */
     text-transform: uppercase;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
@@ -189,8 +187,6 @@ main {
 /* New label styling */
 .auto-label {
     position: absolute;
-    top: 10px; 
-    left: 10px;
     background-color: #ffffff; /* Soft green (standard for "new") */
     color: rgb(0, 0, 0);
     padding: 0.3em 0.8em; /* Reduced padding for a sleeker look */
