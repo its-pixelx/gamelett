@@ -143,6 +143,18 @@ document.addEventListener("DOMContentLoaded", () => {
             gameIcon: "img/pacify/logo.jpg",
             screenshots: ["img/pacify/shot1.png", "img/pacify/shot2.jpg", "img/pacify/shot3.jpg"],
             downloadUrl: "http://fs17.megadb.xyz:8080/d/5lnfxvqoy5vxygoid7w7dwcbewld7buyqrfc4qgpjgeoklhsewcvqge42lqw4sgzu2q2otwb/Pacify-SteamRIP.com.rar"
+        },
+        "gtavicecity": {
+            title: "GTA Vice City",
+            category: "Openworld, Action",
+            developer: "Rockstar Games",
+            description: "Grand Theft Auto: Vice City is an open-world action-adventure game developed by Rockstar Games and released in 2002. Set in the neon-soaked, 1980s-inspired city of Vice City (modeled after Miami), the game follows ex-convict Tommy Vercetti as he rises through the criminal underworld after a drug deal goes wrong. Known for its vibrant atmosphere, iconic soundtrack, and freedom of gameplay, Vice City became a landmark title in gaming history and remains a fan favorite in the GTA series.",
+            version: "v1.0",
+            size: "1.5gb(Aprox)",
+            updateDate: "May 2003",
+            gameIcon: "img/gtavicecity/logo.jpg",
+            screenshots: ["img/gtavicecity/shot1.jpg", "img/gtavicecity/shot2.jpg", "img/gtavicecity/shot3.jpg"],
+            downloadUrl: "https://94-130-129-111.top/Oceanofgames.com/Gta_Vice_City.zip?md5=6jE6IE1kPQ_2vVns7hwNrQ&expires=1752582921"
         }
     };
 
