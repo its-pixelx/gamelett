@@ -174,8 +174,6 @@ main {
 /* New label styling */
 .error-label {
     position: absolute;
-    top: 10px; 
-    left: 10px;
     background-color: #ff0000; /* Soft green (standard for "new") */
     color: white;
     padding: 0.3em 0.8em; /* Reduced padding for a sleeker look */

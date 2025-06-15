@@ -131,6 +131,18 @@ document.addEventListener("DOMContentLoaded", () => {
             gameIcon: "img/drivebeyondhorizon/logo.jpg",
             screenshots: ["img/drivebeyondhorizon/shot1.jpg", "img/drivebeyondhorizon/shot2.jpg", "img/drivebeyondhorizon/shot3.jpg"],
             downloadUrl: "https://download2341.mediafire.com/kfimluvc7q0gpd5c74VA2J0PBrVvaROPZGdqNLCt1VfXjnnqs2sWiXqh9G5OzmvTUUfHHOsByqg2uNuIdegsSG3NSm77Uo1uCBVqUSplmLkMIp8Z-5D_DiX_bi92_ILOzaNHI8sWtPAFi0OoNxIEzjeLtfFKuND0c3j7qdwoGPy2tVs/l39eikq0segvtv6/Drive-Beyond-Horizons-v2025-05-26.zip"
+        },
+        "pacify": {
+            title: "Pacify",
+            category: "Horror",
+            developer: "Shawn Hitchcock",
+            description: "Pacify is a multiplayer horror game developed by Shawn Hitchcock, where players work as paranormal investigators for a company called PAH Inc. Sent into haunted locations, their goal is to subdue malevolent spirits by solving puzzles, collecting key items, and working together to survive. The game features eerie environments, unpredictable ghost behavior, and escalating tension, making it a popular choice for co-op horror fans seeking both scares and teamwork.",
+            version: "v4.24",
+            size: "3.1gb(Aprox)",
+            updateDate: "July 8th, 2021",
+            gameIcon: "img/pacify/logo.jpg",
+            screenshots: ["img/pacify/shot1.png", "img/pacify/shot2.jpg", "img/pacify/shot3.jpg"],
+            downloadUrl: "http://fs17.megadb.xyz:8080/d/5lnfxvqoy5vxygoid7w7dwcbewld7buyqrfc4qgpjgeoklhsewcvqge42lqw4sgzu2q2otwb/Pacify-SteamRIP.com.rar"
         }
     };
 
