@@ -166,7 +166,7 @@ document.addEventListener("DOMContentLoaded", () => {
             updateDate: "January 23, 2018",
             gameIcon: "img/subnautica/logo.jpg",
             screenshots: ["img/subnautica/shot1.jpg", "img/subnautica/shot2.jpg", "img/subnautica/shot3.jpg"],
-            downloadUrl: "https://148-251-84-239.top/Oceanofgames.com/Subnautica.zip?md5=Dc3z2Hsp7yJnqft_a19xzA&expires=1752278853"
+            downloadUrl: "https://www.mediafire.com/file/hnw6vr9pfx3zs7p/Subnautica.v02.07.2024.zip/file?dkey=v94sn4bex8h&r=1966"
         }
     };
 
