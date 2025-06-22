@@ -167,6 +167,18 @@ document.addEventListener("DOMContentLoaded", () => {
             gameIcon: "img/subnautica/logo.jpg",
             screenshots: ["img/subnautica/shot1.jpg", "img/subnautica/shot2.jpg", "img/subnautica/shot3.jpg"],
             downloadUrl: "https://download2267.mediafire.com/xqr4xh6xwqpgClgsobUFilKN0DwwaPcPkas9PEg-AdWZz757Q79d1Z8tHfcTQ8FCv6Mlh4j8ivvo37MQJELZ1Vecqg5x6lGAQjTDcOjITxASuUccRcBrLL20xYhGpscuVoc2dXH35yGTcyPwyXCyiyWvCdehLgSKcw3qXbTbIOMD/hnw6vr9pfx3zs7p/Subnautica.v02.07.2024.zip"
+        },
+        "theplanetcrafterspc": {
+            title: "The Planet Crafter: The Galactic Terraformer Edition",
+            category: "Openworld, Adventure",
+            developer: "Miju Games",
+            description: "(ZIP PASSWORD: 123) The Galactic Terraformer Edition of The Planet Crafter (v1.310) expands the core survival and terraforming experience with the new Planet Humble, introducing an alien world filled with unique biomes, limited natural resources, and new challenges. Featuring the rubble crusher mechanic, enhanced exploration, and co-op-friendly DLC integration, this version pushes planetary survival to a whole new level. Players must adapt to harsh conditions, uncover hidden storylines, and transform a lifeless rock into a thriving ecosystem—this time, with tougher constraints and deeper immersion.",
+            version: "v1.310",
+            size: "2.9gb(Aprox)",
+            updateDate: "October 9, 2024",
+            gameIcon: "img/theplanetcrafterspc/logo.jpg",
+            screenshots: ["img/theplanetcrafterspc/shot1.jpg", "img/theplanetcrafterspc/shot2.jpg", "img/theplanetcrafterspc/shot3.jpg"],
+            downloadUrl: "https://download2341.mediafire.com/kt8lytpa2kpgNz-g_kKcIvz44F2ZtHtdmNiHbXnIL16wOct9epkbf4xy7zwMLSuMHwOF36eb6xkbv-uyPtDTRUSd1eNHkNkS-sBBaaLTvUbwQM_UaCCFwI5lorA13osfksPJiM2QChL88OXA8ByovFfs0dz4Sq-WSD6ifzLfmQ/5iz8kq9sfr1rp39/The+Planet+Crafter+1-524.zip"
         }
     };
 
