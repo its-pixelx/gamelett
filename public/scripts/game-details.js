@@ -176,8 +176,8 @@ document.addEventListener("DOMContentLoaded", () => {
             version: "v1.310",
             size: "2.9gb(Aprox)",
             updateDate: "October 9, 2024",
-            gameIcon: "img/theplanetcrafterspc/logo.jpg",
-            screenshots: ["img/theplanetcrafterspc/shot1.jpg", "img/theplanetcrafterspc/shot2.jpg", "img/theplanetcrafterspc/shot3.jpg"],
+            gameIcon: "img/theplanetcrafterspc/logo.jpeg",
+            screenshots: ["img/theplanetcrafterspc/shot1.jpg", "img/theplanetcrafterspc/shot2.jpeg", "img/theplanetcrafterspc/shot3.jpg"],
             downloadUrl: "https://download2341.mediafire.com/kt8lytpa2kpgNz-g_kKcIvz44F2ZtHtdmNiHbXnIL16wOct9epkbf4xy7zwMLSuMHwOF36eb6xkbv-uyPtDTRUSd1eNHkNkS-sBBaaLTvUbwQM_UaCCFwI5lorA13osfksPJiM2QChL88OXA8ByovFfs0dz4Sq-WSD6ifzLfmQ/5iz8kq9sfr1rp39/The+Planet+Crafter+1-524.zip"
         }
     };
