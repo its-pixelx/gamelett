@@ -148,19 +148,19 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "GTA Vice City",
             category: "Openworld, Action",
             developer: "Rockstar Games",
-            description: "Grand Theft Auto: Vice City is an open-world action-adventure game developed by Rockstar Games and released in 2002. Set in the neon-soaked, 1980s-inspired city of Vice City (modeled after Miami), the game follows ex-convict Tommy Vercetti as he rises through the criminal underworld after a drug deal goes wrong. Known for its vibrant atmosphere, iconic soundtrack, and freedom of gameplay, Vice City became a landmark title in gaming history and remains a fan favorite in the GTA series.",
+            description: "(ZIP PASSWORD: 123V Grand Theft Auto: Vice City is an open-world action-adventure game developed by Rockstar Games and released in 2002. Set in the neon-soaked, 1980s-inspired city of Vice City (modeled after Miami), the game follows ex-convict Tommy Vercetti as he rises through the criminal underworld after a drug deal goes wrong. Known for its vibrant atmosphere, iconic soundtrack, and freedom of gameplay, Vice City became a landmark title in gaming history and remains a fan favorite in the GTA series.",
             version: "v1.0",
             size: "1.5gb(Aprox)",
             updateDate: "May 2003",
             gameIcon: "img/gtavicecity/logo.jpg",
             screenshots: ["img/gtavicecity/shot1.jpg", "img/gtavicecity/shot2.jpg", "img/gtavicecity/shot3.jpg"],
-            downloadUrl: "https://94-130-129-111.top/Oceanofgames.com/Gta_Vice_City.zip?md5=6jE6IE1kPQ_2vVns7hwNrQ&expires=1752582921"
+            downloadUrl: "https://www.mediafire.com/file/tb9jb855vci15en/GTA_Vice_City_Nextgen_Edition_1-0.zip/file?dkey=gby8bwxl7xt&r=1654"
         },
         "subnautica": {
             title: "Subnautica",
             category: "Openworld, Adventure",
             developer: "Unknown Worlds Entertainment",
-            description: "Subnautica is an open-world survival adventure game developed by Unknown Worlds Entertainment, released in 2018 for PC. Set on an alien ocean planet, players take on the role of a lone survivor who must explore the deep sea, gather resources, craft equipment, and uncover the secrets of the mysterious world to escape. Known for its immersive underwater environments, compelling story, and atmospheric tension, Subnautica has become a critically acclaimed title in the survival genre.",
+            description: "(ZIP PASSWORD: 123) Subnautica is an open-world survival adventure game developed by Unknown Worlds Entertainment, released in 2018 for PC. Set on an alien ocean planet, players take on the role of a lone survivor who must explore the deep sea, gather resources, craft equipment, and uncover the secrets of the mysterious world to escape. Known for its immersive underwater environments, compelling story, and atmospheric tension, Subnautica has become a critically acclaimed title in the survival genre.",
             version: "v1.0",
             size: "8.7gb(Aprox)",
             updateDate: "January 23, 2018",
