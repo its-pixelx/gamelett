@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://fpyf8.com/88/tag.min.js" data-zone="152868" async data-cfasync="false"></script>
-    <meta charset="UTF-8">
+        <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gamelett by its_pixelx</title>
     <link rel="stylesheet" href="style.css">
@@ -10,9 +9,37 @@
 </head>
     
 <body>
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <button class="popup-close" onclick="closePopup()">×</button>
+        <h2>🎉 Website Updated!</h2>
+        <p>All major improvements have been applied to Gamelett. Here's what’s new:</p>
+        <ul>
+            <li>New home page with immersive video backgrounds</li>
+            <li>Enhanced footer with better navigation links</li>
+            <li>Smoother hover effects and responsive animations</li>
+            <li>Faster load times and optimized performance</li>
+            <li>Trending games section redesigned for clarity</li>
+            <li>Testimonials now dynamically update with avatars</li>
+            <li>CTA buttons now more interactive with glowing effect</li>
+            <li>Popup notifications with background video and glow</li>
+            <li>Overall interface improvements for a modern look</li>
+        </ul>
+        <p>Explore the site and enjoy the new features and animations. Happy gaming! 🚀</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
     <header>
+
         <h1>Gamelett</h1>
-        <p>Discover & download your favorite games for free -- its_pixelx</p>
+        <p>Discover & download your favorite games for free</p>
         <!-- Search Bar -->
         <!-- Search Bar -->
         <div class="search-bar" id="search-bar">
@@ -168,10 +195,40 @@
             <!-- Add more games dynamically or as static content -->
         </section>
     </main>
-    <footer>
-        <p>© 2024 Gamelett. All rights reserved.</p>
-    </footer>
+    <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-links">
+            <a href="#">About</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Contact</a>
+            <a href="#">Terms of Service</a>
+        </div>
+        <p>© 2025 Gamelett. All rights reserved.</p>
+    </div>
+</footer>
     <script src="scripts/game-details.js"></script>
     <script src="scripts.js"></script>
+    <script>
+window.addEventListener('load', () => {
+    const popup = document.getElementById('changePopup');
+    const closeBtn = document.getElementById('closePopup');
+    const closeTop = document.getElementById('closePopupTop');
+
+    popup.style.display = 'flex';
+
+    function closePopup() {
+        popup.style.display = 'none';
+    }
+
+    closeBtn.addEventListener('click', closePopup);
+    closeTop.addEventListener('click', closePopup);
+
+    // Optional: auto-hide after 10 seconds
+    setTimeout(closePopup, 10000);
+});
+</script>
+
+
 </body>
 </html>

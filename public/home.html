@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="img/web/logo.png" type="image/x-icon">
+    <title>Gamelett - Welcome</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+        /* Reset & basics */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        a {
+            color: #ff416c;
+            text-decoration: none;
+        }
+
+        /* Full-screen background video */
+        .bg-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
+            filter: brightness(0.35) blur(4px);
+        }
+
+        .bg-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.45);
+            z-index: -1;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 80vh;
+            min-height: 480px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 1.5rem;
+        }
+
+        .hero-content {
+            position: relative;
+            max-width: 720px;
+            z-index: 10;
+        }
+
+        .hero-content h1 {
+            font-size: 4rem;
+            background: linear-gradient(90deg, #ff416c, #ff4b2b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 0 30px rgba(255, 75, 43, 0.85);
+        }
+
+        .hero-content p {
+            font-size: 1.6rem;
+            margin-bottom: 2.5rem;
+            line-height: 1.5;
+            color: #f0f0f0;
+            text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+        }
+
+        .btn-enter {
+            font-weight: 700;
+            font-size: 1.3rem;
+            padding: 1rem 4rem;
+            border-radius: 50px;
+            background: #ff4b2b;
+            color: white;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 8px 30px rgba(255, 75, 43, 0.9);
+            transition: 0.3s;
+        }
+
+        .btn-enter:hover {
+            background: #ff416c;
+            box-shadow: 0 12px 40px rgba(255, 65, 60, 1);
+        }
+
+        /* Main container */
+        .main-container {
+            max-width: 1080px;
+            margin: 0 auto 5rem auto;
+            padding: 2rem 1.5rem;
+        }
+
+        /* Second Video Section */
+        .video-bg-container {
+            position: relative;
+            width: 100%;
+            height: 50vh;
+            max-height: 400px;
+            overflow: hidden;
+            border-radius: 20px;
+            margin: 3rem 0;
+        }
+
+        .video-bg-container video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120%;
+            height: auto;
+            min-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+            filter: brightness(0.45) saturate(1.15);
+        }
+
+        .video-bg-container::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(255, 75, 43, 0.25), rgba(0, 255, 246, 0.2));
+            z-index: 1;
+            pointer-events: none;
+            border-radius: 20px;
+        }
+
+        .content-overlay {
+            position: relative;
+            z-index: 2;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+            text-align: center;
+        }
+
+        .content-overlay h2 {
+            font-size: 2.6rem;
+            margin-bottom: 1rem;
+            color: #ff4b2b;
+            text-shadow: 0 0 20px rgba(255, 75, 43, 0.9);
+        }
+
+        .content-overlay p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #eee;
+            text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Features Section */
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2.5rem;
+            justify-content: space-between;
+            margin-bottom: 3rem;
+        }
+
+        .feature {
+            flex: 1 1 300px;
+            background: #1c253a;
+            border-radius: 18px;
+            padding: 2rem 1.8rem;
+            text-align: center;
+            box-shadow: 0 0 28px rgba(255, 75, 43, 0.25);
+            transition: transform 0.3s;
+        }
+
+        .feature:hover {
+            transform: translateY(-12px);
+        }
+
+        .feature-icon {
+            font-size: 3.5rem;
+            color: #ff4b2b;
+            margin-bottom: 1.2rem;
+        }
+
+        .feature-title {
+            font-weight: 600;
+            font-size: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .feature-desc {
+            font-size: 1.05rem;
+            color: #ddd;
+            line-height: 1.5;
+        }
+
+        /* Trending Games */
+        .trending {
+            margin-bottom: 4rem;
+        }
+
+        .trending h2 {
+            font-weight: 700;
+            font-size: 2.8rem;
+            color: #ff4b2b;
+            text-align: center;
+            margin-bottom: 2.5rem;
+            text-shadow: 0 0 20px rgba(255, 75, 43, 0.95);
+        }
+
+        .game-grid {
+            display: grid;
+            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        }
+
+/* Game Card */
+.game-card {
+    background: #1e1e1e;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    width: 280px;
+    max-height: 380px;
+    margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.game-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 12px 30px rgba(255, 75, 43, 0.6);
+}
+
+/* Game Image */
+.game-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 2px solid #282828;
+    transition: transform 0.3s ease;
+}
+
+.game-card:hover img {
+    transform: scale(1.08);
+}
+
+/* Game Info */
+.game-info {
+    padding: 1rem 1rem;
+    transition: transform 0.3s ease;
+}
+
+.game-name {
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: #ff4b2b;
+    margin-bottom: 0.3rem;
+}
+
+.game-genre {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* Button inside card */
+.game-card .btn {
+    background: linear-gradient(90deg, #ff416c, #ff4b2b);
+    color: white;
+    padding: 0.6em 1.5em;
+    border: none;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    margin-top: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-card .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(255,75,43,0.7);
+}
+
+
+
+        /* CTA Section */
+.cta-section {
+    text-align: center;
+    margin: 8rem 0 5rem;
+}
+
+/* Button with video background */
+.video-btn {
+    position: relative;
+    display: inline-block;
+    padding: 1.4rem 5rem;
+    font-size: 1.75rem;
+    color: white;
+    border: none;
+    border-radius: 60px;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    box-shadow: 0 12px 45px rgba(255, 65, 43, 0.95);
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+/* Video inside button */
+.video-btn .btn-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.5); /* Make text visible */
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.video-btn:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 18px 60px rgba(255, 65, 43, 1);
+}
+
+.video-btn:hover .btn-video {
+    filter: brightness(0.6); /* Slightly brighter on hover */
+}
+
+
+/* Footer Section */
+.footer {
+    background: #111827;
+    color: #ccc;
+    padding: 3rem 2rem;
+    text-align: center;
+    border-top: 2px solid #ff416c;
+}
+
+.footer a {
+    color: #ff416c;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #ff73a0;
+}
+
+.footer p {
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+    color: #999;
+}
+
+
+        /* Responsive */
+        @media (max-width:1023px) {
+            .features {
+                flex-direction: column;
+                gap: 2rem;
+            }
+        }
+
+        @media (max-width:460px) {
+            .hero-content h1 {
+                font-size: 2.4rem;
+            }
+
+            .hero-content p {
+                font-size: 1.15rem;
+            }
+
+            .game-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Testimonials */
+        .testimonials {
+            max-width: 1000px;
+            margin: 4rem auto 6rem auto;
+            padding: 2rem;
+        }
+
+        .testimonials h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #ff4b2b;
+            text-shadow: 0 0 15px rgba(255, 75, 43, 0.8);
+        }
+
+        .testimonial-feed {
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 1rem;
+            max-height: 450px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .testimonial {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1.5rem;
+            border-radius: 20px;
+            background: rgba(25, 30, 50, 0.6);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            animation: slideUp 0.8s ease forwards;
+        }
+
+        .testimonial img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid #ff4b2b;
+            object-fit: cover;
+        }
+
+        .testimonial-content {
+            flex: 1;
+        }
+
+        .testimonial-content p {
+            margin: 0 0 0.3rem 0;
+            font-style: italic;
+            color: #f0f0f0;
+            line-height: 1.4;
+        }
+
+        .testimonial-name {
+            font-weight: 700;
+            color: #ff4b2b;
+            font-size: 0.95rem;
+        }
+
+        @keyframes slideUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <!-- Full background video -->
+    <video autoplay muted loop playsinline class="bg-video">
+        <source src="bg3.mp4" type="video/mp4">
+    </video>
+    <div class="bg-overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Gamelett</h1>
+            <p>Discover & download your favorite games for free</p>
+            <button class="btn-enter" onclick="location.href='testaccess.html'">Enter Site</button>
+        </div>
+    </section>
+
+    <div class="main-container">
+
+        <!-- Second Section Video -->
+        <section class="video-bg-container">
+            <video autoplay muted loop playsinline>
+                <source src="back.mp4" type="video/mp4">
+            </video>
+            <div class="content-overlay">
+                <h2>Endless Gaming Awaits</h2>
+                <p>Step into a realm where every game offers a new adventure. From heart-pounding challenges to creative escapes, our collection is designed to keep you engaged, entertained, and coming back for more. Discover your next favorite game and let the excitement begin!</p>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section class="features">
+            <div class="feature">
+                <div class="feature-icon">🎮</div>
+                <div class="feature-title">Wide Variety of Games</div>
+                <div class="feature-desc">From action to strategy, we have it all free for you.</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🔐</div>
+                <div class="feature-title">Safe Downloads</div>
+                <div class="feature-desc">No viruses or malware. Clean & verified links.</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🕐</div>
+                <div class="feature-title">Autoupdate</div>
+                <div class="feature-desc">Get your hands on the newest releases automatically.</div>
+            </div>
+        </section>
+
+        <!-- Trending Games -->
+        <section class="trending">
+            <h2>Trending Games</h2>
+            <div class="game-grid">
+                <div class="game-card"><img src="img/gta5/logo.png" alt="GTA V">
+                    <div class="game-info">
+                        <div class="game-name">GTA V</div>
+                        <div class="game-genre">Open World, Action</div>
+                    </div>
+                </div>
+                <div class="game-card"><img src="img/palworld/logo.jpg" alt="Palworld">
+                    <div class="game-info">
+                        <div class="game-name">Palworld</div>
+                        <div class="game-genre">Adventure, Open World</div>
+                    </div>
+                </div>
+                <div class="game-card"><img src="img/forzahorizon5/logo.jpg" alt="Forza Horizon 5">
+                    <div class="game-info">
+                        <div class="game-name">Forza Horizon 5</div>
+                        <div class="game-genre">Racing, Open World</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <h2>Gamers Around the World Are Talking</h2>
+            <div class="testimonial-feed" id="testimonialFeed"></div>
+        </section>
+
+        <!-- CTA Section -->
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="cta-wrapper">
+        <button class="video-btn" onclick="location.href='testaccess.html'">
+            Try Out Now
+            <video autoplay muted loop playsinline class="btn-video">
+                <source src="bg2.mp4" type="video/mp4">
+            </video>
+        </button>
+    </div>
+</section>
+
+
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-links">
+            <a href="#">About</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Contact</a>
+            <a href="#">Terms of Service</a>
+        </div>
+        <p>© 2025 Gamelett. All rights reserved.</p>
+    </div>
+</footer>
+
+
+    <script>
+        const names = ["Aryan", "Priya", "Vikram", "Leah", "Marcus", "Sophia", "Dmitri", "Akira", "Liam", "Emma", "Noah", "Olivia", "Ethan", "Ava", "Mason", "Isabella", "Logan", "Mia", "Lucas", "Amelia"];
+        const comments = [
+            "This site is amazing! Downloading was super fast.",
+            "I found games I never knew existed. Love it!",
+            "Safe, clean, and free! Just perfect.",
+            "The new releases are awesome. I check weekly!",
+            "Finally, a site where I can actually trust downloads.",
+            "Smooth interface and really helpful descriptions.",
+            "My friends keep asking where I get my games from.",
+            "Games run perfectly with zero issues!",
+            "I can't stop playing these games. Super addictive!",
+            "The support team is very helpful and responsive.",
+            "Love the variety. Something for everyone!",
+            "Downloading games has never been easier.",
+            "Highly recommended for all gamers out there.",
+            "The website looks modern and professional.",
+            "Found a game I’ve been searching for months!",
+            "Impressed with the weekly updates and new releases."
+        ];
+        const avatars = Array.from({ length: 20 }, (_, i) => `https://i.pravatar.cc/56?u=${i + 1}`);
+
+        const feed = document.getElementById("testimonialFeed");
+
+        function addTestimonial() {
+            const name = names[Math.floor(Math.random() * names.length)];
+            const comment = comments[Math.floor(Math.random() * comments.length)];
+            const avatar = avatars[Math.floor(Math.random() * avatars.length)];
+
+            const div = document.createElement("div");
+            div.className = "testimonial";
+            div.innerHTML = `
+            <img src="${avatar}" alt="${name}">
+            <div class="testimonial-content">
+                <p>"${comment}"</p>
+                <div class="testimonial-name">${name}</div>
+            </div>
+            `;
+
+            feed.prepend(div);
+
+            if (feed.children.length > 10) feed.removeChild(feed.lastChild);
+        }
+
+        for (let i = 0; i < 5; i++) addTestimonial();
+        setInterval(addTestimonial, 1500);
+    </script>
+
+</body>
+
+</html>

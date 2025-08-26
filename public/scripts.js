@@ -66,3 +66,16 @@ document.addEventListener('DOMContentLoaded', function () {
     // Call the filter on page load to handle initial state
     filterGames();
 });
+
+function showPopup() {
+    document.getElementById('popup').style.display = 'flex';
+    document.body.classList.add('popup-active');
+}
+
+function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+    document.body.classList.remove('popup-active');
+}
+
+window.onload = showPopup;
+
