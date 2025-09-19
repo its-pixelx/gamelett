@@ -9,15 +9,9 @@
 </head>
     
 <body>
-<div id="popup" class="popup">
-    <div class="popup-content">
-        <button class="popup-close" onclick="closePopup()">×</button>
-        <h2>🎉 Website Updated!</h2>
-        <p>All major improvements have been applied to Gamelett. Here's what’s new:</p>
-        <ul>
-<br>
-<center>
-<li style="color: #39FF14; font-size: 30px; font-weight: bold; list-style-type: none; background-color: #4B0082; text-shadow:
+<style>
+.neon-text{
+text-shadow:
     0 0 7px #00baff, /* Cyan glow */
     0 0 10px #00baff,
     0 0 21px #00baff,
@@ -70,7 +64,65 @@
       0 0 50px #ff00e1,
       0 0 75px #ff00e1;
   }
-}">--ADS REMOVED--</li>
+}
+}
+@keyframes neon-cycle {
+  0% {
+    text-shadow:
+      0 0 7px #ff00e1, /* Pink */
+      0 0 10px #ff00e1,
+      0 0 21px #ff00e1,
+      0 0 35px #ff00e1,
+      0 0 50px #ff00e1,
+      0 0 75px #ff00e1;
+  }
+  25% {
+    text-shadow:
+      0 0 7px #00aaff, /* Light Blue */
+      0 0 10px #00aaff,
+      0 0 21px #00aaff,
+      0 0 35px #00aaff,
+      0 0 50px #00aaff,
+      0 0 75px #00aaff;
+  }
+  50% {
+    text-shadow:
+      0 0 7px #00ff99, /* Green */
+      0 0 10px #00ff99,
+      0 0 21px #00ff99,
+      0 0 35px #00ff99,
+      0 0 50px #00ff99,
+      0 0 75px #00ff99;
+  }
+  75% {
+    text-shadow:
+      0 0 7px #ffdd00, /* Yellow */
+      0 0 10px #ffdd00,
+      0 0 21px #ffdd00,
+      0 0 35px #ffdd00,
+      0 0 50px #ffdd00,
+      0 0 75px #ffdd00;
+  }
+  100% {
+    text-shadow:
+      0 0 7px #ff00e1, /* Pink */
+      0 0 10px #ff00e1,
+      0 0 21px #ff00e1,
+      0 0 35px #ff00e1,
+      0 0 50px #ff00e1,
+      0 0 75px #ff00e1;
+  }
+}
+</style>
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <button class="popup-close" onclick="closePopup()">×</button>
+        <h2>🎉 Website Updated!</h2>
+        <p>All major improvements have been applied to Gamelett. Here's what’s new:</p>
+        <ul>
+<br>
+<center>
+<li style="color: #39FF14; font-size: 30px; font-weight: bold; list-style-type: none; background-color: #4B0082;" class:"neon-text">--ADS REMOVED--</li>
 </center>
 <br>
             <li>New home page with immersive video backgrounds</li>
