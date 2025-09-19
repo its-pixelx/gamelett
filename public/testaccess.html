@@ -10,20 +10,10 @@
     
 <body>
 <style>
-.neon-text {
-  /* Initial color is not necessary here because the animation will immediately take over */
-  font-size: 30px; 
-  font-weight: bold; 
-  list-style-type: none; 
-  background-color: #4B0082; /* This purple background was in your original code; the animated glow will override it */
-
-  /* Apply the animation to the element */
-  animation: neon-cycle 3s infinite alternate; 
-}
-
-/* @keyframes must be a top-level CSS rule */
+/* @keyframes must be a top-level CSS rule, not nested inside another class */
 @keyframes neon-cycle {
   0% {
+    color: #ff00e1; /* Set the text color to match the glow */
     text-shadow:
       0 0 7px #ff00e1, /* Pink */
       0 0 10px #ff00e1,
@@ -33,6 +23,7 @@
       0 0 75px #ff00e1;
   }
   25% {
+    color: #00aaff; /* Set the text color to match the glow */
     text-shadow:
       0 0 7px #00aaff, /* Light Blue */
       0 0 10px #00aaff,
@@ -42,6 +33,7 @@
       0 0 75px #00aaff;
   }
   50% {
+    color: #00ff99; /* Set the text color to match the glow */
     text-shadow:
       0 0 7px #00ff99, /* Green */
       0 0 10px #00ff99,
@@ -51,6 +43,7 @@
       0 0 75px #00ff99;
   }
   75% {
+    color: #ffdd00; /* Set the text color to match the glow */
     text-shadow:
       0 0 7px #ffdd00, /* Yellow */
       0 0 10px #ffdd00,
@@ -60,6 +53,7 @@
       0 0 75px #ffdd00;
   }
   100% {
+    color: #ff00e1; /* Set the text color to match the glow */
     text-shadow:
       0 0 7px #ff00e1, /* Pink */
       0 0 10px #ff00e1,
@@ -69,7 +63,17 @@
       0 0 75px #ff00e1;
   }
 }
+
+.neon-text {
+  /* It is best to remove inline styles for animated effects. */
+  font-size: 30px; 
+  font-weight: bold; 
+  list-style-type: none; 
+  background-color: #4B0082; 
+  animation: neon-cycle 3s infinite alternate; 
+}
 </style>
+
 <div id="popup" class="popup">
     <div class="popup-content">
         <button class="popup-close" onclick="closePopup()">×</button>
@@ -78,7 +82,7 @@
         <ul>
 <br>
 <center>
-<li style="color: #39FF14; font-size: 30px; font-weight: bold; list-style-type: none; background-color: #4B0082;" class:"neon-text">--ADS REMOVED--</li>
+<li class:"neon-text">--ADS REMOVED--</li>
 </center>
 <br>
             <li>New home page with immersive video backgrounds</li>
