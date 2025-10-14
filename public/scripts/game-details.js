@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
             updateDate: "June 8th, 2025 (Direct Autoupdate File Feature Added)",
             gameIcon: "img/minecraftunlocker/logo.png",
             screenshots: ["No Screenshots available, sry....",],
-            downloadUrl: "https://www.mediafire.com/folder/obtzhzbe61hip/Minecraft+Full+Unlock"
+            downloadUrl: "https://mega.nz/folder/roBCzLSJ#ZLzMD5kWDtmABWwzsJaA2A"
         },
         "drivebeyondhorizon": {
             title: "Drive Beyond Horizon",
