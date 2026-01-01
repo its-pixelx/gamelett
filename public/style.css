@@ -656,4 +656,91 @@ body.popup-active > :not(#popup) {
     border-color: #c77dff;
 }
 
+/* Steam-like hover overlay */
+.game-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 14px;
+    background: linear-gradient(180deg, #1c1f2b, #141622);
+    transition: transform 0.35s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.35s ease;
+    cursor: pointer;
+}
 
+/* Lift & shadow on hover */
+.game-item:hover {
+    transform: translateY(-12px) scale(1.05);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6),
+                0 0 25px rgba(106,13,173,0.35),
+                0 0 15px rgba(0,191,255,0.25);
+    z-index: 10;
+}
+
+/* Image zoom on hover */
+.game-item img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+.game-item:hover img {
+    transform: scale(1.08);
+    filter: brightness(1.05);
+}
+
+/* Overlay container */
+.game-item .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.85);
+    padding: 10px 12px;
+    box-sizing: border-box;
+    transform: translateY(100%);
+    transition: transform 0.35s ease;
+    border-radius: 0 0 14px 14px;
+}
+
+/* Show overlay on hover */
+.game-item:hover .overlay {
+    transform: translateY(0);
+}
+
+/* Overlay content */
+.overlay h2 {
+    margin: 0;
+    font-size: 1rem;
+    color: #39ff14;
+    text-shadow: 0 0 5px #39ff14;
+}
+
+.overlay p {
+    margin: 4px 0 0;
+    font-size: 0.85rem;
+    color: #d3d3d3;
+}
+
+.overlay .btn {
+    margin-top: 6px;
+    display: inline-block;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #6a0dad, #1e3c72);
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.overlay .btn:hover {
+    background: #6a0dad;
+    box-shadow: 0 6px 15px rgba(106,13,173,0.5);
+}
+
+/* Tags glow subtly on hover */
+.game-item:hover .tag {
+    box-shadow: 0 0 10px rgba(57,255,20,0.25);
+    transform: scale(1.05);
+}
