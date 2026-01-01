@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-        <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gamelett by its_pixelx</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/web/logo.png">
 </head>
-    
+
 <body>
 
-<div id="popup" class="popup">
-    <div class="popup-content">
-        <button class="popup-close" onclick="closePopup()">×</button>
-        <h2>🎉 Website Updated!</h2>
-        <p>All major improvements have been applied to Gamelett. Here's what’s new:</p>
-        <ul>
-<br>
-<center>
-<li style="font-size: 30px; 
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <button class="popup-close" onclick="closePopup()">×</button>
+            <h2>🎉 Website Updated!</h2>
+            <p>All major improvements have been applied to Gamelett. Here's what’s new:</p>
+            <ul>
+                <br>
+                <center>
+                    <li style="font-size: 30px; 
   font-weight: bold; 
   list-style-type: none; 
   background-color: #1a0033; 
@@ -32,21 +33,21 @@
     0 0 10px #39ff14,
     0 0 20px #39ff14,
     0 0 40px #0ff;">---ADS REMOVED---</li>
-</center>
-<br>
-            <li>New home page with immersive video backgrounds</li>
-            <li>Enhanced footer with better navigation links</li>
-            <li>Smoother hover effects and responsive animations</li>
-            <li>Faster load times and optimized performance</li>
-            <li>Trending games section redesigned for clarity</li>
-            <li>Testimonials now dynamically update with avatars</li>
-            <li>CTA buttons now more interactive with glowing effect</li>
-            <li>Popup notifications with background video and glow</li>
-            <li>Overall interface improvements for a modern look</li>
-        </ul>
-        <p>Explore the site and enjoy the new features and animations. Happy gaming! 🚀</p>
+                </center>
+                <br>
+                <li>New home page with immersive video backgrounds</li>
+                <li>Enhanced footer with better navigation links</li>
+                <li>Smoother hover effects and responsive animations</li>
+                <li>Faster load times and optimized performance</li>
+                <li>Trending games section redesigned for clarity</li>
+                <li>Testimonials now dynamically update with avatars</li>
+                <li>CTA buttons now more interactive with glowing effect</li>
+                <li>Popup notifications with background video and glow</li>
+                <li>Overall interface improvements for a modern look</li>
+            </ul>
+            <p>Explore the site and enjoy the new features and animations. Happy gaming! 🚀</p>
+        </div>
     </div>
-</div>
 
 
 
@@ -55,14 +56,12 @@
 
 
 
-    <header>
-
+    <header class="site-header">
         <h1>Gamelett</h1>
         <p>Discover & download your favorite games for free</p>
-        <!-- Search Bar -->
-        <!-- Search Bar -->
+
         <div class="search-bar" id="search-bar">
-            <span class="search-icon" id="search-icon">🔍</span> <!-- Search Icon -->
+            <span class="search-icon">🔍</span>
             <input type="text" id="search-input" placeholder="Search games...">
             <select id="category-filter">
                 <option value="">All Categories</option>
@@ -75,181 +74,241 @@
                 <option value="rpg">RPG</option>
             </select>
         </div>
-        
-        
     </header>
+
     <main>
         <!-- Add this somewhere in your HTML where you want to display the results count -->
         <div id="results-text" class="results-text">0 games found</div>
 
 
         <section class="game-list" id="game-list">
-            <!-- Game items dynamically filtered -->
-                
-                <div class="game-item" data-name="Minecraft For Windows Trail Unlocker" data-category="arcade openworld">
-                                    <div class="new-label">New!</div> <!-- New label -->
-                                     <div class="fix-label" style="top: 50px; left: 12px;">Fixed</div> <!-- Fix label -->
-                <img src="img/minecraftunlocker/logo.png" alt="Minecraft Unlocker">
-                <h2>Minecraft For Windows Trail Full Unlocker</h2>
-                <p>Arcade, Open World</p>
-                <a href="game-details.html?game=minecraftunlocker" class="btn">Get It</a>
-            </div>
+    <!-- Game items dynamically filtered -->
 
-            <div class="game-item" data-name="The Planet Crafter: The Galactic Terraformer Edition" data-category="openworld adventure">
-                <div class="new-label">New!</div> <!-- New label -->
-                <img src="img/theplanetcrafterspc/logo.jpeg" alt="The Planet Crafter: The Galactic Terraformer Edition">
-                <h2>The Planet Crafter: The Galactic Terraformer Edition</h2>
-                <p>Openworld, Adventure</p>
-                <a href="game-details.html?game=theplanetcrafterspc" class="btn">Get It</a>
-            </div>
-            
-             <div class="game-item" data-name="Subnautica" data-category="openworld adventure">
-                <div class="new-label">New!</div> <!-- New label -->
-                <div class="fix-label" style="top: 50px; left: 12px;">Fixed</div> <!-- Fix label -->
-                <img src="img/subnautica/logo.jpg" alt="subnautica">
-                <h2>Subnautica</h2>
-                <p>Openworld, Adventure</p>
-                <a href="game-details.html?game=subnautica" class="btn">Get It</a>
-            </div>
+    <div class="game-item" data-name="Minecraft For Windows Trial Unlocker" data-category="arcade openworld">
+        <img src="img/minecraftunlocker/logo.png" alt="Minecraft Unlocker">
 
-             <div class="game-item" data-name="GTA Vice City" data-category="openworld action">
-                <div class="new-label">New!</div> <!-- New label -->
-                 <div class="fix-label" style="top: 50px; left: 12px;">Fixed</div> <!-- Fix label -->
-                <img src="img/gtavicecity/logo.jpg" alt="gtavicecity">
-                <h2>GTA Vice City</h2>
-                <p>Openworld, Action</p>
-                <a href="game-details.html?game=gtavicecity" class="btn">Get It</a>
-            </div>
+        <div class="game-tags below-image">
+            <span class="tag tag-new">NEW</span>
+            <span class="tag tag-fixed">FIXED</span>
+        </div>
 
-             <div class="game-item" data-name="Pacify" data-category="horror">
-                <div class="error-label" style="top: 50px; left: 12px;">Risk</div> <!-- Error label -->
-                <div class="new-label">New!</div> <!-- New label -->
-                <img src="img/pacify/logo.jpg" alt="Pacify">
-                <h2>Pacify</h2>
-                <p>Horror</p>
-                <a href="game-details.html?game=pacify" class="btn">Get It</a>
-            </div>
+        <h2>Minecraft For Windows Trial Full Unlocker</h2>
+        <p>Arcade, Open World</p>
+        <a href="game-details.html?game=minecraftunlocker" class="btn">Get It</a>
+    </div>
 
-             <div class="game-item" data-name="Drive Beyond Horizon" data-category="openworld">
-                <div class="new-label">New!</div> <!-- New label -->
-                <img src="img/drivebeyondhorizon/logo.jpg" alt="Drive Beyond Horizon">
-                <h2>Drive Beyond Horizon</h2>
-                <p>Open World</p>
-                <a href="game-details.html?game=drivebeyondhorizon" class="btn">Get It</a>
-            </div>
+    <div class="game-item" data-name="The Planet Crafter: The Galactic Terraformer Edition" data-category="openworld adventure">
+        <img src="img/theplanetcrafterspc/logo.jpeg" alt="The Planet Crafter">
 
-            <div class="game-item" data-name="STALKER 2: Heart of Chornobyl –- Ultimate Edition" data-category="rpg">
-                <div class="auto-label">Autoupdate</div> <!-- Auto label -->
-                <img src="img/stalker2/logo.jpeg" alt="STALKER 2: Heart of Chornobyl –- Ultimate Edition">
-                <h2>STALKER 2: Heart of Chornobyl –- Ultimate Edition</h2>
-                <p>Action, First-Person Shooter, Survival, RPG</p>
-                <a href="game-details.html?game=stalker2" class="btn">Get It</a>
-            </div>
+        <div class="game-tags below-image">
+            <span class="tag tag-new">NEW</span>
+        </div>
 
-            <div class="game-item" data-name="arma 3" data-category="rpg">
-                <div class="auto-label">Autoupdate</div> <!-- Auto label -->
-                <img src="img/arma3/logo.jpg" alt="Arma 3">
-                <h2>Arma 3 -- Ultimate Edition</h2>
-                <p>Tactical shooter with role-playing elements</p>
-                <a href="game-details.html?game=arma3" class="btn">Get It</a>
-            </div>
+        <h2>The Planet Crafter: The Galactic Terraformer Edition</h2>
+        <p>Open World, Adventure</p>
+        <a href="game-details.html?game=theplanetcrafterspc" class="btn">Get It</a>
+    </div>
 
-            <div class="game-item" data-name="forza horizon 5" data-category="racing openworld">
-                <div class="auto-label">Autoupdate</div> <!-- Auto label -->
-                <img src="img/forzahorizon5/logo.jpg" alt="Forza Horizon 5">
-                <h2>Forza Horizon 5 -- VIP</h2>
-                <p>Racing, Open World</p>
-                <a href="game-details.html?game=forzahorizon-5" class="btn">Get It</a>
-            </div>
+    <div class="game-item" data-name="Subnautica" data-category="openworld adventure">
+        <img src="img/subnautica/logo.jpg" alt="Subnautica">
 
-            <div class="game-item" data-name="GTA 5" data-category="action openworld">
-                <div class="fix-label">Fixed</div> <!-- Error label -->
-                <div class="auto-label"  style="top: 60px; left: 12px;">Autoupdate</div> <!-- Auto label -->
-                <img src="img/gta5/logo.png" alt="GTA 5">
-                <h2>GTA5</h2>
-                <p>Open World, Action</p>
-                <a href="game-details.html?game=gta5" class="btn">Get It</a>
-            </div>
+        <div class="game-tags below-image">
+            <span class="tag tag-new">NEW</span>
+            <span class="tag tag-fixed">FIXED</span>
+        </div>
 
-            <div class="game-item" data-name="GTA4 -- Complete Edition" data-category="action openworld">
-                <div class="auto-label">Autoupdate</div> <!-- Auto label -->
-                <img src="img/gta4/logo.png" alt="GTA 4">
-                <h2>GTA4 -- Complete Edition</h2>
-                <p>Open World, Action</p>
-                <a href="game-details.html?game=gta4" class="btn">Get It</a>
-            </div>
+        <h2>Subnautica</h2>
+        <p>Open World, Adventure</p>
+        <a href="game-details.html?game=subnautica" class="btn">Get It</a>
+    </div>
 
-            <div class="game-item" data-name="Palworld" data-category="adventure openworld">
-                <div class="auto-label">Autoupdate</div> <!-- Auto label -->
-                <img src="img/palworld/logo.jpg" alt="Palworld">
-                <h2>Palworld</h2>
-                <p>Open World, Adventure</p>
-                <a href="game-details.html?game=palworld" class="btn">Get It</a>
-            </div>
+    <div class="game-item" data-name="GTA Vice City" data-category="openworld action">
+        <img src="img/gtavicecity/logo.jpg" alt="GTA Vice City">
 
-            <div class="game-item" data-name="cyberpunk 2077" data-category="action openworld">
-                <div class="auto-label">Autoupdate</div> <!-- Auto label -->
-                <img src="img/cyberpunk2077/logo.jpeg" alt="Cyberpunk 2077">
-                <h2>Cyberpunk 2077</h2>
-                <p>Open World, Futuristic,  Action</p>
-                <a href="game-details.html?game=cyberpunk2077" class="btn">Get It</a>
-            </div>
+        <div class="game-tags below-image">
+            <span class="tag tag-new">NEW</span>
+            <span class="tag tag-fixed">FIXED</span>
+        </div>
 
-            <div class="game-item" data-name="Red Dead Redemption" data-category="action adventure openworld">
-                <div class="auto-label">Autoupdate</div> <!-- Auto label -->
-                <img src="img/rdr/logo.jpeg" alt="rdr">
-                <h2>Red Dead Redemption</h2>
-                <p>Open World, Action, Shooting</p>
-                <a href="game-details.html?game=rdr" class="btn">Get It</a>
-            </div>
+        <h2>GTA Vice City</h2>
+        <p>Open World, Action</p>
+        <a href="game-details.html?game=gtavicecity" class="btn">Get It</a>
+    </div>
 
-            <div class="game-item" data-name="Red Dead Redemption 2" data-category="action adventure openworld">
-                <div class="auto-label">Autoupdate</div> <!-- Auto label -->
-                <img src="img/rdr2/logo.jpg" alt="Red Dead Redemption 2">
-                <h2>Red Dead Redemption 2</h2>
-                <p>Open World, Action, Shooting</p>
-                <a href="game-details.html?game=rdr2" class="btn">Get It</a>
-            </div>
-            
-            
-            
-            <!-- Add more games dynamically or as static content -->
-        </section>
+    <div class="game-item" data-name="Pacify" data-category="horror">
+        <img src="img/pacify/logo.jpg" alt="Pacify">
+
+        <div class="game-tags below-image">
+            <span class="tag tag-new">NEW</span>
+            <span class="tag tag-risk">RISK</span>
+        </div>
+
+        <h2>Pacify</h2>
+        <p>Horror</p>
+        <a href="game-details.html?game=pacify" class="btn">Get It</a>
+    </div>
+
+    <div class="game-item" data-name="Drive Beyond Horizon" data-category="openworld">
+        <img src="img/drivebeyondhorizon/logo.jpg" alt="Drive Beyond Horizon">
+
+        <div class="game-tags below-image">
+            <span class="tag tag-new">NEW</span>
+        </div>
+
+        <h2>Drive Beyond Horizon</h2>
+        <p>Open World</p>
+        <a href="game-details.html?game=drivebeyondhorizon" class="btn">Get It</a>
+    </div>
+
+    <div class="game-item" data-name="STALKER 2 Ultimate Edition" data-category="rpg">
+        <img src="img/stalker2/logo.jpeg" alt="STALKER 2">
+
+        <div class="game-tags below-image">
+            <span class="tag tag-auto">AUTO UPDATE</span>
+        </div>
+
+        <h2>STALKER 2: Heart of Chornobyl — Ultimate Edition</h2>
+        <p>Action, FPS, Survival, RPG</p>
+        <a href="game-details.html?game=stalker2" class="btn">Get It</a>
+    </div>
+
+    <div class="game-item" data-name="Arma 3 Ultimate Edition" data-category="rpg">
+        <img src="img/arma3/logo.jpg" alt="Arma 3">
+
+        <div class="game-tags below-image">
+            <span class="tag tag-auto">AUTO UPDATE</span>
+        </div>
+
+        <h2>Arma 3 — Ultimate Edition</h2>
+        <p>Tactical Shooter, RPG</p>
+        <a href="game-details.html?game=arma3" class="btn">Get It</a>
+    </div>
+
+    <div class="game-item" data-name="Forza Horizon 5" data-category="racing openworld">
+        <img src="img/forzahorizon5/logo.jpg" alt="Forza Horizon 5">
+
+        <div class="game-tags below-image">
+            <span class="tag tag-auto">AUTO UPDATE</span>
+        </div>
+
+        <h2>Forza Horizon 5 — VIP</h2>
+        <p>Racing, Open World</p>
+        <a href="game-details.html?game=forzahorizon-5" class="btn">Get It</a>
+    </div>
+
+    <div class="game-item" data-name="GTA 5" data-category="action openworld">
+        <img src="img/gta5/logo.png" alt="GTA 5">
+
+        <div class="game-tags below-image">
+            <span class="tag tag-fixed">FIXED</span>
+            <span class="tag tag-auto">AUTO UPDATE</span>
+            <span class="tag tag-source">FITGIRL</span>
+        </div>
+
+        <h2>GTA V</h2>
+        <p>Open World, Action</p>
+        <a href="game-details.html?game=gta5" class="btn">Get It</a>
+    </div>
+
+    <div class="game-item" data-name="GTA 4 Complete Edition" data-category="action openworld">
+        <img src="img/gta4/logo.png" alt="GTA 4">
+
+        <div class="game-tags below-image">
+            <span class="tag tag-auto">AUTO UPDATE</span>
+        </div>
+
+        <h2>GTA IV — Complete Edition</h2>
+        <p>Open World, Action</p>
+        <a href="game-details.html?game=gta4" class="btn">Get It</a>
+    </div>
+
+    <div class="game-item" data-name="Palworld" data-category="adventure openworld">
+        <img src="img/palworld/logo.jpg" alt="Palworld">
+
+        <div class="game-tags below-image">
+            <span class="tag tag-auto">AUTO UPDATE</span>
+        </div>
+
+        <h2>Palworld</h2>
+        <p>Open World, Adventure</p>
+        <a href="game-details.html?game=palworld" class="btn">Get It</a>
+    </div>
+
+    <div class="game-item" data-name="Cyberpunk 2077" data-category="action openworld">
+        <img src="img/cyberpunk2077/logo.jpeg" alt="Cyberpunk 2077">
+
+        <div class="game-tags below-image">
+            <span class="tag tag-auto">AUTO UPDATE</span>
+        </div>
+
+        <h2>Cyberpunk 2077</h2>
+        <p>Open World, Futuristic, Action</p>
+        <a href="game-details.html?game=cyberpunk2077" class="btn">Get It</a>
+    </div>
+
+    <div class="game-item" data-name="Red Dead Redemption" data-category="action adventure openworld">
+        <img src="img/rdr/logo.jpeg" alt="Red Dead Redemption">
+
+        <div class="game-tags below-image">
+            <span class="tag tag-auto">AUTO UPDATE</span>
+        </div>
+
+        <h2>Red Dead Redemption</h2>
+        <p>Open World, Action</p>
+        <a href="game-details.html?game=rdr" class="btn">Get It</a>
+    </div>
+
+    <div class="game-item" data-name="Red Dead Redemption 2" data-category="action adventure openworld">
+        <img src="img/rdr2/logo.jpg" alt="Red Dead Redemption 2">
+
+        <div class="game-tags below-image">
+            <span class="tag tag-auto">AUTO UPDATE</span>
+        </div>
+
+        <h2>Red Dead Redemption 2</h2>
+        <p>Open World, Action</p>
+        <a href="game-details.html?game=rdr2" class="btn">Get It</a>
+    </div>
+
+</section>
+
     </main>
     <!-- Footer Section -->
-<footer class="footer">
-    <div class="footer-container">
-        <div class="footer-links">
-            <a href="#">About</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Contact</a>
-            <a href="#">Terms of Service</a>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="#">About</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Contact</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <p>© 2025 Gamelett. All rights reserved.</p>
         </div>
-        <p>© 2025 Gamelett. All rights reserved.</p>
-    </div>
-</footer>
+    </footer>
     <script src="scripts/game-details.js"></script>
     <script src="scripts.js"></script>
     <script>
-window.addEventListener('load', () => {
-    const popup = document.getElementById('changePopup');
-    const closeBtn = document.getElementById('closePopup');
-    const closeTop = document.getElementById('closePopupTop');
+        window.addEventListener('load', () => {
+            const popup = document.getElementById('popup');
+            const closeBtn = popup.querySelector('.popup-close');
 
-    popup.style.display = 'flex';
+            popup.style.display = 'flex';
+            document.body.classList.add('popup-active');
 
-    function closePopup() {
-        popup.style.display = 'none';
-    }
+            function closePopup() {
+                popup.style.display = 'none';
+                document.body.classList.remove('popup-active');
+            }
 
-    closeBtn.addEventListener('click', closePopup);
-    closeTop.addEventListener('click', closePopup);
+            closeBtn.addEventListener('click', closePopup);
 
-    // Optional: auto-hide after 10 seconds
-    setTimeout(closePopup, 10000);
-});
-</script>
+            // Auto-close after 10 seconds
+            setTimeout(closePopup, 10000);
+        });
+    </script>
+
 
 
 </body>
+
 </html>

@@ -127,15 +127,15 @@ main {
 
 /* Game List */
 .game-item {
-    background: #1e1e1e; /* Dark Background */
-    width: 300px; /* Fixed Width */
-    padding: 1.5em;
-    border-radius: 8px;
+    background: linear-gradient(180deg, #1c1f2b, #141622);
+    width: 280px;
+    padding: 1.2em;
+    border-radius: 14px;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    margin: 0 auto; /* Center the card */
-    position: relative; /* To position the new label */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.45);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
+
 
 /* New label styling */
 .new-label {
@@ -217,15 +217,20 @@ main {
 
 /* Other styles for the game card */
 .game-item h2 {
-    color: #6a0dad; /* Purple */
+    color: #ffffff;
+    font-size: 1.05em;
+    margin: 0.5em 0 0.2em;
 }
 
+
 .game-item img {
-    width: 100px;   /* Fixed Width */
-    height: 100px;  /* Fixed Height */
-    object-fit: cover; /* Maintain aspect ratio, crop if needed */
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
     border-radius: 10px;
+    margin-bottom: 0.6em;
 }
+
 
 
 
@@ -244,8 +249,9 @@ main {
 
 .btn:hover {
     background: #6a0dad;
-    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(106,13,173,0.5);
 }
+
 
 /* Footer Section */
 .footer {
@@ -465,45 +471,57 @@ main {
 #popup {
     display: none;
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    inset: 0; /* better than top/left */
+    margin: auto;
     width: 90%;
     max-width: 750px;
-    border-radius: 25px;
+    max-height: 90vh;
+    border-radius: 20px;
     z-index: 9999;
-    overflow: hidden; /* clip everything outside popup */
-    aspect-ratio: auto 1/1; /* keeps ratio if needed */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 
 /* Popup content box */
 #popup .popup-content {
     position: relative;
-    z-index: 2;
-    background: rgba(0, 0, 0, 0.815); /* slightly transparent */
-    border-radius: inherit;
-    padding: 3rem 4.5rem;
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 20px;
+    padding: 2rem;
     color: #fff;
-    max-height: 50vh;
+
+    width: 100%;
+    max-height: 80vh;
     overflow-y: auto;
-    box-shadow: 0 0 40px rgba(0, 191, 255, 0.4); /* subtle glow */
+
+    box-shadow: 0 0 40px rgba(0, 191, 255, 0.4);
 }
 
 /* Close button */
 #popup .popup-close {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    background: rgba(55, 0, 255, 0.507);
+    position: sticky; /* 🔥 KEY FIX */
+    top: 0;
+    margin-left: auto;
+
+    background: rgba(55, 0, 255, 0.6);
     border: none;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: #fff;
     border-radius: 50%;
     cursor: pointer;
-    padding: 0.25rem 0.7rem;
-    z-index: 3;
-    transition: 0.3s;
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
 }
+
 
 #popup .popup-close:hover {
     background: rgba(0, 160, 255, 0.6);
@@ -568,3 +586,74 @@ body.popup-active > :not(#popup) {
         padding: 1.5rem 1rem;
     }
 }
+
+@media (max-width: 600px) {
+    #popup .popup-content {
+        padding: 1.2rem;
+    }
+
+    #popup .popup-content h2 {
+        font-size: 1.4rem;
+    }
+}
+
+/* ===== TAG BAR (OFFICIAL LOOK) ===== */
+.game-tags.below-image {
+    position: static;              /* not floating */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 10px 0 6px;
+}
+
+/* refined tag style */
+.tag {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    padding: 5px 12px;
+    border-radius: 6px;             /* NOT pill → more premium */
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* subtle hover draw (not childish) */
+.game-item:hover .tag {
+    transform: none;
+}
+
+/* glow only on important tags */
+.tag-new {
+    background: #0f2f1a;
+    color: #39ff14;
+    border-color: #39ff14;
+    box-shadow: 0 0 10px rgba(57,255,20,0.25);
+}
+
+.tag-fixed {
+    background: #2b2500;
+    color: #ffd600;
+    border-color: #ffd600;
+}
+
+.tag-risk {
+    background: #2b0000;
+    color: #ff3c3c;
+    border-color: #ff3c3c;
+}
+
+.tag-auto {
+    background: #001f2b;
+    color: #00bfff;
+    border-color: #00bfff;
+}
+
+.tag-source {
+    background: #1a102b;
+    color: #c77dff;
+    border-color: #c77dff;
+}
+
+
