@@ -744,3 +744,35 @@ body.popup-active > :not(#popup) {
     box-shadow: 0 0 10px rgba(57,255,20,0.25);
     transform: scale(1.05);
 }
+
+/* Mobile tap feedback */
+@media (max-width: 768px) {
+    .game-item {
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    /* On touch (active state) */
+    .game-item:active {
+        transform: translateY(-6px) scale(1.03);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.5), 0 0 15px rgba(106,13,173,0.3);
+    }
+}
+
+@media (max-width: 768px) {
+    .overlay {
+        transform: translateY(0);
+        opacity: 1;
+        backdrop-filter: blur(2px);
+    }
+}
+
+@media (max-width: 768px) {
+    .game-item {
+        animation: pulseMobile 3s ease-in-out infinite;
+    }
+
+    @keyframes pulseMobile {
+        0%, 100% { transform: translateY(0) scale(1); }
+        50% { transform: translateY(-2px) scale(1.01); }
+    }
+}

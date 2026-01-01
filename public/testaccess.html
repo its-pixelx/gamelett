@@ -305,6 +305,23 @@
             // Auto-close after 10 seconds
             setTimeout(closePopup, 10000);
         });
+
+        // Select all game cards
+const gameCards = document.querySelectorAll('.game-item');
+
+gameCards.forEach(card => {
+    card.addEventListener('click', (e) => {
+        // Prevent double trigger if user actually clicks the button
+        if (e.target.classList.contains('btn')) return;
+
+        // Find the "Get It" button inside this card
+        const btn = card.querySelector('.btn');
+        if (btn) {
+            btn.click(); // Trigger the button's action
+        }
+    });
+});
+
     </script>
 
 
